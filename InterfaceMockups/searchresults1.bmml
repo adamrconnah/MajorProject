@@ -1,0 +1,30 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="1608" measuredH="790" mockupW="1366" mockupH="768">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::BrowserWindow" x="242" y="22" w="1366" h="768" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <markup>true</markup>
+        <text>A%20Web%20Page%0Ahttp%3A//</text>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::Title" x="373" y="119" w="321" h="-1" measuredW="232" measuredH="50" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Phenome-nal</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::LinkBar" x="1230" y="148" w="-1" h="-1" measuredW="245" measuredH="21" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Home%2C%20About%2C%20Related%20Sites%2C%20Blog</text>
+      </controlProperties>
+    </control>
+    <control controlID="3" controlTypeID="com.balsamiq.mockups::SubTitle" x="432" y="227" w="-1" h="-1" measuredW="165" measuredH="33" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search%20Results</text>
+      </controlProperties>
+    </control>
+    <control controlID="8" controlTypeID="com.balsamiq.mockups::DataGrid" x="563" y="300" w="770" h="388" measuredW="353" measuredH="173" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Disease%20Name%20%28ID%29%20%5E%20%20%2C%20Heading%202%2C%20Heading%203%20%0ADisease%201%20%284454536%29%2C%20Show%20phenotype%2C%20explore%0ADisease%202%20%283423874%29%2C%20Show%20phenotype%20%2C%20explore%0ADisease%203%20%28388307%29%2C%20Show%20phenotype%2C%20explore%0ADisease%204%20%281255935%29%2C%20Show%20phenotype%2C%20explore%0ADisease%205%20%286256159751%29%2C%20Show%20phenotype%2C%20explore%0A%7B10L%2C%200C%2C%200C%7D</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

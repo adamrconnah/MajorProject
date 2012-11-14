@@ -1,0 +1,24 @@
+>>>>> "a" == aoc9  <aoc9@aber.ac.uk> writes:
+
+Hi Adam,
+
+    a> Hello Rob, I just tried to download the Google web toolkit for
+    a> PHP programming, and it says "We are sorry, but GwtPHP is not yet
+    a> available to public". at this link
+    a> http://www.gwtphp.com/download/
+    a> Am I looking at the right thing?
+
+Yes, sorry about this, I didn't check it before.
+You can use the GWT with PHP directly, there is a tutorial here:
+https://sites.google.com/site/angelhurtado/tutorialgwt2
+
+If you like, you can also use something else, such as the Yahoo User
+Interface Library (http://yuilibrary.com/projects/yui3/), which has
+better PHP support than GWT (see
+http://yuilibrary.com/projects/phploader/). The important feature that
+you would want is that a Javascript application can run in a browser and
+communicate with a server using XML, i.e., that you use AJAX
+(https://en.wikipedia.org/wiki/Ajax_(programming)).
+
+I hope this helps,
+Rob.

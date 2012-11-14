@@ -1,0 +1,34 @@
+
+Introduction to RDF:
+http://www.rdfabout.com/quickintro.xpd
+
+and
+
+http://www.rdfabout.com/intro/?section=contents
+
+
+RDF store:
+
+http://virtuoso.openlinksw.com/
+
+
+PHP+GWT:
+
+http://www.gwtphp.com/
+
+
+PHP RDF library:
+
+http://graphite.ecs.soton.ac.uk/
+
+and the older RAP library
+
+http://www4.wiwiss.fu-berlin.de/bizer/rdfapi/
+
+
+Current user interface:
+
+http://phenomebrowser.net/
+
+(written in PHP)
+
