@@ -1,0 +1,5 @@
+//DB.DBA.RDF_LOAD_RDFXML_MT (file_to_string_output ('/tmp/testrdf.rdf'), '', 'http://localhost:8890/temp/');
+
+//
+
+//sparql select * from <http://localhost:8890/temp/> where {?s ?p ?o};
