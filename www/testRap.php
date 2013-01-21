@@ -61,3 +61,11 @@ $res3 = $model->findVocabulary("");
 $res3->writeAsHtmlTable();
 echo "<P>";
 $model->writeAsHtml();
+echo "<P>";
+echo "<P>";
+echo "<P>";
+
+
+
+
+?>
