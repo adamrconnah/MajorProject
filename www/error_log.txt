@@ -1,0 +1,335 @@
+[17-Dec-2012 15:28:00 UTC] PHP Warning:  include(./../api/RDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 15
+[17-Dec-2012 15:28:00 UTC] PHP Warning:  include(): Failed opening './../api/RDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 15
+[17-Dec-2012 15:28:00 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 21
+[17-Dec-2012 15:29:12 UTC] PHP Warning:  include(rdfapi-php/api/rdfapi-php/api/RDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 15
+[17-Dec-2012 15:29:12 UTC] PHP Warning:  include(): Failed opening 'rdfapi-php/api/rdfapi-php/api/RDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 15
+[17-Dec-2012 15:29:12 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 21
+[17-Dec-2012 15:29:53 UTC] PHP Warning:  include(/rdfapi-php/api//rdfapi-php/api/RDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 15
+[17-Dec-2012 15:29:53 UTC] PHP Warning:  include(): Failed opening '/rdfapi-php/api//rdfapi-php/api/RDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 15
+[17-Dec-2012 15:29:53 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 21
+[17-Dec-2012 15:31:27 UTC] PHP Warning:  include(E:/var/www/rdfapi-php/api/RDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 15
+[17-Dec-2012 15:31:27 UTC] PHP Warning:  include(): Failed opening 'E:/var/www/rdfapi-php/api/RDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 15
+[17-Dec-2012 15:31:27 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 21
+[17-Dec-2012 15:39:09 UTC] PHP Warning:  include(rdfapi-php/api/RDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 15
+[17-Dec-2012 15:39:09 UTC] PHP Warning:  include(): Failed opening 'rdfapi-php/api/RDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 15
+[17-Dec-2012 15:39:09 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 21
+[17-Dec-2012 15:40:15 UTC] PHP Warning:  include(rdfapi-php/api/RDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 8
+[17-Dec-2012 15:40:15 UTC] PHP Warning:  include(): Failed opening 'rdfapi-php/api/RDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 8
+[17-Dec-2012 15:40:15 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 14
+[17-Dec-2012 15:43:14 UTC] PHP Warning:  include(rdfapi-php/apiRDFAPI.php): failed to open stream: No such file or directory in /var/www/testRap.php on line 8
+[17-Dec-2012 15:43:14 UTC] PHP Warning:  include(): Failed opening 'rdfapi-php/apiRDFAPI.php' for inclusion (include_path='.:/usr/share/php:/usr/share/pear') in /var/www/testRap.php on line 8
+[17-Dec-2012 15:43:14 UTC] PHP Fatal error:  Class 'ModelFactory' not found in /var/www/testRap.php on line 14
+[17-Dec-2012 15:43:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 15:43:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 15:43:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 15:43:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 15:43:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 15:43:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:18 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:18 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:18 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:18 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:18 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:18 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[17-Dec-2012 17:36:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:12:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:12:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:12:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:12:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:12:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:12:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:20 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:24:20 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:24:20 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:24:40 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:40 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:40 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:40 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:40 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:40 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:40 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:24:40 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:24:40 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:24:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:42 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:24:42 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:24:42 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:24:42 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:29:14 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:14 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:14 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:14 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:14 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:14 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:14 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:29:14 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:29:14 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:29:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:29:22 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:29:22 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:29:22 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:30:16 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:16 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:16 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:16 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:16 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:16 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:16 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:30:16 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:30:16 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:30:16 UTC] PHP Fatal error:  RDFAPI error (class: MemModel; method: find): Parameters must be subclasses of Node or NULL in /var/www/rdfapi-php/api/model/MemModel.php on line 530
+[19-Dec-2012 18:30:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:22 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:22 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:30:22 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:30:22 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:30:22 UTC] PHP Fatal error:  RDFAPI error (class: MemModel; method: find): Parameters must be subclasses of Node or NULL in /var/www/rdfapi-php/api/model/MemModel.php on line 530
+[19-Dec-2012 18:30:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:30:38 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:30:38 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:30:38 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:31:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:30 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:30 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:31:30 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:31:30 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:31:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:38 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:31:38 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:31:38 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:31:38 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:39:51 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:39:51 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:39:51 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:39:51 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:39:51 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:39:51 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:39:51 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:39:51 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:39:51 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:42:13 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:13 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:13 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:13 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:13 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:13 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:13 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:42:13 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:42:13 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:42:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:42:39 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:42:39 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:42:39 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:45:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:45:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:45:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:45:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:45:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:45:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:45:46 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:45:46 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:45:46 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:48:01 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:01 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:01 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:01 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:01 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:01 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:01 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:48:01 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:48:01 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:48:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:39 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:48:39 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:48:39 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:48:39 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:52:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:52:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:52:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:52:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:52:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:52:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:52:52 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:52:52 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:52:52 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:59:35 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:35 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:35 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:35 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:35 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:35 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:35 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:59:35 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:59:35 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:59:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:48 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:48 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:59:48 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:59:48 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 18:59:50 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:50 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:50 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:50 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:50 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:50 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 18:59:50 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 18:59:50 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 18:59:50 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:08:55 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:08:55 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:08:55 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:08:55 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:08:55 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:08:55 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:08:55 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:08:55 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:08:55 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:14:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:14:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:14:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:14:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:14:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:14:52 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:14:52 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:14:52 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:14:52 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:15:02 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:02 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:02 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:02 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:02 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:02 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:02 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:15:02 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:15:02 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:15:08 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:08 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:08 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:08 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:08 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:08 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:15:08 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:15:08 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:15:08 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:16:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:25 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:16:25 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:16:25 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:16:33 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:33 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:33 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:33 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:33 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:33 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:33 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:16:33 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:16:33 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:16:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:46 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:16:46 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:16:46 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:16:46 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:17:56 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:17:56 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:17:56 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:17:56 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:17:56 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:17:56 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:17:56 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:17:56 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:17:56 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:18:04 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:04 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:04 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:04 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:04 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:04 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:04 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:18:04 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:18:04 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:18:11 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:11 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:11 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:11 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:11 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:11 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:18:11 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:18:11 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:18:11 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:20:49 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:20:49 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:20:49 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:20:49 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:20:49 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:20:49 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:20:49 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:20:49 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:20:49 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[19-Dec-2012 19:24:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:24:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:24:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:24:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:24:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:24:25 UTC] PHP Deprecated:  Function ereg() is deprecated in /var/www/rdfapi-php/api/syntax/RdfParser.php on line 2091
+[19-Dec-2012 19:24:25 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
+[19-Dec-2012 19:24:25 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
+[19-Dec-2012 19:24:25 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458

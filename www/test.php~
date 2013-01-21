@@ -29,7 +29,7 @@ WHERE
 // Execute the query. The results of a SPARQL SELECT provide
 // array access by using the variables used in the query as keys:
 $results = $query->execute($model);
-foreach ($results as $result) {
+foreach ($ressults as $result) {
     echo $result['name1'] . " knows " . $result['name2'] . "\n";
 }
 ?>
