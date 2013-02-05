@@ -1,0 +1,100 @@
+format-version: 1.2
+date: 01:11:2012 16:23
+saved-by: csmith
+auto-generated-by: OBO-Edit 2.1
+subsetdef: CvDC_Terms "NHLBI Cardiovascular Development Consortium (CvDC) Terms"
+subsetdef: Europhenome_Terms "Terms in use by Europhenome"
+subsetdef: Sanger_Terms "Terms in use by Mouse Genetics Project, Sanger Institute, Wellcome Trust Genome Campus"
+default-namespace: MPheno.ontology
+remark: The Mammalian Phenotype Ontology is being developed by Cynthia L. Smith, Susan M. Bello, Carroll W. Goldsmith and Janan T. Eppig, as part of the Mouse Genome Database (MGD) Project, Mouse Genome Informatics (MGI), The Jackson Laboratory, Bar Harbor, ME. Copyright 2007 The Jackson Laboratory. This file contains pre-coordinated phenotype terms, definitions and synonyms that can be used to describe mammalian phenotypes. The ontology is represented as a directed acyclic graph (DAG). It organizes phenotype terms into major biological system headers such as nervous system and respiratory system.  Behavior and lethality terms are also represented. This ontology is currently under development. Daily updates are available at the Mouse Genome Informatics (MGI) ftp site (ftp://ftp.informatics.jax.org/pub/reports/index.html#pheno) as well as the OBO Foundry site (http://obofoundry.org/). Questions, comments and suggestions are welcome, and should be directed to pheno@informatics.jax.org MGD is funded by NIH/NHGRI grant HG000330.
+
+[Term]
+id: MP:0000001
+name: mammalian phenotype
+def: "the observable morphological, physiological, behavioral and other characteristics of mammalian organisms that are manifested through development and lifespan" [MGI:csmith]
+
+[Term]
+id: MP:0000002
+name: Morphology
+def: "OBSOLETE." [MGI:csmith]
+synonym: "Anatomy" EXACT []
+is_obsolete: true
+
+[Term]
+id: MP:0000003
+name: abnormal adipose tissue morphology
+alt_id: MP:0000011
+def: "any structural anomaly of the connective tissue composed of fat cells enmeshed in areolar tissue" [MESH:A10.165.114, MGI:cwg]
+synonym: "adipose tissue abnormalities" BROAD []
+synonym: "adipose tissue dysplasia" EXACT []
+is_a: MP:0005375 ! adipose tissue phenotype
+
+[Term]
+id: MP:0000005
+name: increased brown adipose tissue amount
+alt_id: MP:0001779
+def: "increased amount of the thermogenic form of adipose tissue that is composed of brown adipocytes" [MESH:A10.165.114.322]
+synonym: "increased brown fat" EXACT []
+synonym: "increased brown fat amount" RELATED []
+is_a: MP:0001778 ! abnormal brown adipose tissue amount
+
+[Term]
+id: MP:0000008
+name: increased white adipose tissue amount
+alt_id: MP:0001782
+def: "increased quantity of fat-storing cells/tissue" [MGI:cwg]
+synonym: "increased white fat" EXACT []
+synonym: "increased white fat amount" RELATED []
+is_a: MP:0001781 ! abnormal white adipose tissue amount
+
+[Term]
+id: MP:0000010
+name: abnormal abdominal fat pad morphology
+def: "any structural anomaly of the encapsulated adipose tissue in the abdomen" [PMID:8941642]
+synonym: "abnormal abdominal fat depot morphology" EXACT []
+is_a: MP:0005334 ! abnormal fat pad morphology
+
+[Term]
+id: MP:0000012
+name: loss of subcutaneous adipose tissue
+def: "OBSOLETE. reduction in amount or absence of adipose tissue beneath the skin" [PMID:8941642]
+comment: Obsolete.  Use instead the terms decreased subcutaneous adipose tissue amount (MP:0008844) or absent subcutaneous adipose tissue (MP:0008843).
+is_obsolete: true
+consider: MP:0008843
+consider: MP:0008844
+
+[Term]
+id: MP:0000013
+name: abnormal adipose tissue distribution
+def: "alterations in the normal placement of body fat" [PMID:10471508]
+subset: Europhenome_Terms
+synonym: "abnormal fat distribution" RELATED []
+is_a: MP:0000003 ! abnormal adipose tissue morphology
+
+[Term]
+id: MP:0000015
+name: abnormal ear pigmentation
+def: "anomaly in the coloration of the ear due to changes in the amount, shape, or distribution of cells producing pigment" [MGI:cwg, MGI:llw2]
+is_a: MP:0002095 ! abnormal skin pigmentation
+is_a: MP:0002177 ! abnormal outer ear morphology
+
+[Term]
+id: MP:0000017
+name: big ears
+def: "outer ears of a greater than normal size" [MGI:cwg]
+subset: Europhenome_Terms
+subset: Sanger_Terms
+synonym: "enlarged ears" EXACT []
+synonym: "increased outer ear size" EXACT []
+synonym: "large ears" EXACT []
+synonym: "macrotia" EXACT []
+is_a: MP:0002177 ! abnormal outer ear morphology
+
+[Term]
+id: MP:0000018
+name: small ears
+def: "outer ears of a smaller than normal size" [MGI:cwg]
+subset: Europhenome_Terms
+subset: Sanger_Terms
+synonym: "decreased ear size" EXACT []
+synonym: "microtia" EXACT []
