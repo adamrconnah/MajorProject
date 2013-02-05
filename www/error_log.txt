@@ -381,3 +381,13 @@
 [07-Jan-2013 18:58:28 UTC] PHP Warning:  Missing argument 1 for MemModel::index(), called in /var/www/testRap.php on line 37 and defined in /var/www/rdfapi-php/api/model/MemModel.php on line 447
 [07-Jan-2013 18:58:28 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 453
 [07-Jan-2013 18:58:28 UTC] PHP Notice:  Undefined variable: mode in /var/www/rdfapi-php/api/model/MemModel.php on line 458
+[21-Jan-2013 16:24:01 UTC] PHP Strict Standards:  Non-static method ModelFactory::getSparqlClient() should not be called statically in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 12
+[21-Jan-2013 16:24:02 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 28
+[21-Jan-2013 16:24:02 UTC] PHP Fatal error:  Class 'SPARQLEngine' not found in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 37
+[21-Jan-2013 16:24:16 UTC] PHP Strict Standards:  Non-static method ModelFactory::getSparqlClient() should not be called statically in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 12
+[21-Jan-2013 16:24:17 UTC] PHP Warning:  Invalid argument supplied for foreach() in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 28
+[21-Jan-2013 16:24:17 UTC] PHP Fatal error:  Class 'SPARQLEngine' not found in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 37
+[21-Jan-2013 16:32:02 UTC] PHP Strict Standards:  Non-static method ModelFactory::getSparqlClient() should not be called statically in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 12
+[21-Jan-2013 16:32:03 UTC] PHP Fatal error:  Class 'SPARQLEngine' not found in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 37
+[21-Jan-2013 16:33:07 UTC] PHP Strict Standards:  Non-static method ModelFactory::getSparqlClient() should not be called statically in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 12
+[21-Jan-2013 16:33:10 UTC] PHP Fatal error:  Class 'SPARQLEngine' not found in C:\Program Files (x86)\EasyPHP-12.1\www\MajorProject\www\testSparql.php on line 37

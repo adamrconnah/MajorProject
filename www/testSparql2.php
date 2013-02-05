@@ -1,10 +1,10 @@
 <?php 
  // Include all RAP classes
-define("RDFAPI_INCLUDE_DIR", "C:/Apache/htdocs/rdfapi-php/api/");
+ define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
 include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
 
 // Create a SPARQL client
-$client = ModelFactory::getSparqlClient("http://www.exampleSparqlService.net:2020/example");
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
 
 //Once the client has been created, we can perform our first query which will be: "Find the full name of all employees". We create a $querystring containing the corresponding SPARQL query:
 
@@ -31,4 +31,4 @@ foreach($result as $line){
 
 //Another, even more convenient way to display the results of a query is to use the writeQueryResultAsHtmlTable() method of the SPARQL engine. All we have to do is to pass the query result to this method:
 
-SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
