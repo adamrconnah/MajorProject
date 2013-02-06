@@ -1,0 +1,33 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+xmlns:obo="http://obofoundry.org/obo/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#" 
+xmlns:phenomenet="http://phenomebrowser.org/phenomenet/">
+
+	<phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_187500">
+		<phenomenet:has_url>http://omim.org/entry/187500</phenomenet:has_url>
+		<phenomenet:has_name>Tetralogy of Fallot</phenomenet:has_name>
+		<phenomenet:has_phenotype>HP_0000006</phenomenet:has_phenotype>
+		<phenomenet:has_phenotype>HP_0000337</phenomenet:has_phenotype>
+				
+		<phenomenet:has_inferred_phenotype>MP_0000001</phenomenet:has_inferred_phenotype>
+		<phenomenet:has_inferred_phenotype>MP_0000226</phenomenet:has_inferred_phenotype>
+				</phenomenet:Genotype>
+
+		<phenomenet:Edge>
+			<phenomenet:has_edge> OMIM_187500_OMIM_187500</phenomenet:has_edge> 
+				<phenomenet:has_node> OMIM_187500 </phenomenet:has_node>
+				<phenomenet:has_node> OMIM_187500 </phenomenet:has_node>
+					<phenomenet:has_value>1.0</phenomenet:has_value>
+		</phenomenet:Edge>
+
+		<phenomenet:Edge>
+			<phenomenet:has_edge> OMIM_187500_MGI-GT_439</phenomenet:has_edge> 
+				<phenomenet:has_node> OMIM_187500 </phenomenet:has_node>
+				<phenomenet:has_node> MGI-GT_439 </phenomenet:has_node>
+					<phenomenet:has_value>0.389606</phenomenet:has_value>
+		</phenomenet:Edge>
+	
+
+	
+</rdf:RDF>

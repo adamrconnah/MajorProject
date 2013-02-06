@@ -1,0 +1,34 @@
+<?xml version="1.0"?>
+<rdf:RDF 
+xmlns:obo="http://obofoundry.org/obo/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:phenomenet="http://phenomebrowser.org/phenomenet/">
+
+	<phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_187500">
+		
+		<phenomenet:has_url>http://omim.org/entry/187500</phenomenet:has_url>
+		<phenomenet:has_name>Tetralogy of Fallot</phenomenet:has_name>
+		
+		<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/HP_0000006" />
+		<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/HP_0000337" />
+		
+		<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+		<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000266" />
+		
+		<phenomenet:has_edge>
+			<phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_187500_OMIM_187500">
+				<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_187500" />
+				<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_187500" />
+				<phenomenet:has_value>1.0</phenomenet:has_value>
+			</phenomenet:Edge>
+		</phenomenet:has_edge>
+		<phenomenet:has_edge rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_187500_OMIM_187501" />
+		<phenomenet:has_edge rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_185500_MGI-GT_439" />
+	</phenomenet:Genotype>
+	
+	<phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_187500_MGI-GT_439">
+		<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_187500" />
+		<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_439" />
+		<phenomenet:has_value>0.389606</phenomenet:has_value>
+	</phenomenet:Edge>
+</rdf:RDF>
