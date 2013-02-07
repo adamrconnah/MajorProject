@@ -51,16 +51,7 @@ while (!feof($genotype) ) { //feof = while not end of file
 				//open ontologyTerms.sql
 				//if inferred part[1], is equal to ontologyPart[0] print stuff 
 			$j++;
-			$ontology = fopen("OntologyTerms.sql", "rb"); 			//opens file InferredPhenotype.sql
-			$t = 0;
-			while (!feof($ontology) ){
-			$ontologyRow[] = fgets($ontology);  							//fgets gets line
-			$ontologyParts = explode("\t", $ontologyRow[$t]); 				//explode using tab delimiter to get 2 strings.
-			$ontologyParts = str_replace(':', '_', $ontologyParts);
-			if ($inferredParts[1] == $ontologyParts[0]){ 	
-				echo $ontologyParts[1];
-					}
-				}
+		
 			}
 			
 	$edge = fopen("Edge.sql", "rb"); 			//opens file InferredPhenotype.sql
@@ -87,7 +78,25 @@ while (!feof($genotype) ) { //feof = while not end of file
 			}
 
 			echo "</phenomenet:Genotype>";
-	}	
+	}
+	echo "<phenomenet:OntologyTerm>";
+	$ontology = fopen("OntologyTerms.sql", "rb"); 			//opens file InferredPhenotype.sql
+			$t = 0;
+			while (!feof($ontology) ){
+			$ontologyRow[] = fgets($ontology);  							//fgets gets line
+			$ontologyParts = explode("\t", $ontologyRow[$t]); 				//explode using tab delimiter to get 2 strings.
+			$ontologyParts = str_replace(':', '_', $ontologyParts);
+			 	
+			
+			echo "<phenomenet:has_url>\"http://obofoundry.org/obo/"	.$ontologyParts[0]. "</phenomenet:has_url>". "\n";
+			echo "<phenomenet:has_name>". $ontologyParts[1]."</phenomenet:has_name>". "\n";				
+			//echo $ontologyParts[0]. "name is ".$ontologyParts[1]."\n";
+					$t++;
+				}
+	echo "</phenomenet:OntologyTerm>";
+
+
+				
 			echo "</rdf:RDF>";
 /*
 While the file still has rows to search.
