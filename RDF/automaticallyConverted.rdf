@@ -31,4 +31,7 @@ xmlns:phenomenet="http://phenomebrowser.org/phenomenet/">
 		<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_439" />
 		<phenomenet:has_value>0.389606</phenomenet:has_value>
 	</phenomenet:Edge>
+	<phenomenet:Ont rdf:about="http://obofoundry.org/obo/MP_0000001">
+		<phenomenet:has_name>mammalian phenotype</phenomenet:has_name>
+</phenomenet:Ont>
 </rdf:RDF>
