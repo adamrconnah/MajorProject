@@ -79,7 +79,7 @@ while (!feof($genotype) ) { //feof = while not end of file
 
 			echo "</phenomenet:Genotype>";
 	}
-	echo "<phenomenet:OntologyTerm>";
+	
 	$ontology = fopen("OntologyTerms.sql", "rb"); 			//opens file InferredPhenotype.sql
 			$t = 0;
 			while (!feof($ontology) ){
@@ -87,13 +87,14 @@ while (!feof($genotype) ) { //feof = while not end of file
 			$ontologyParts = explode("\t", $ontologyRow[$t]); 				//explode using tab delimiter to get 2 strings.
 			$ontologyParts = str_replace(':', '_', $ontologyParts);
 			 	
-			
-			echo "<phenomenet:has_url>\"http://obofoundry.org/obo/"	.$ontologyParts[0]. "</phenomenet:has_url>". "\n";
+			echo "<phenomenet:OntologyTerm rdf:about=\"http://obofoundry.org/obo/".$ontologyParts[0]."\">";
+			echo "<phenomenet:has_url>\"http://obofoundry.org/obo/"	.$ontologyParts[0]. "\"</phenomenet:has_url>". "\n";
 			echo "<phenomenet:has_name>". $ontologyParts[1]."</phenomenet:has_name>". "\n";				
 			//echo $ontologyParts[0]. "name is ".$ontologyParts[1]."\n";
 					$t++;
+					echo "</phenomenet:OntologyTerm>";	
 				}
-	echo "</phenomenet:OntologyTerm>";
+
 
 
 				
