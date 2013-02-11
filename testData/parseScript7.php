@@ -12,8 +12,8 @@ while (!feof($genotype) ) { //feof = while not end of file
 	$genoRow[] = fgets($genotype);  //fgets gets line
 	$genoParts = explode("\t", $genoRow[$i]); //explode using tab delimiter to get 3 strings.
 	$genoParts[0] = str_replace(':', '_', $genoParts[0]);
-	$genoParts[0] = trim($genoParts[0]);
-	$genoParts[1] = trim($genoParts[1]);
+	$genoParts[0] = trim($genoParts[0], "\r\n");
+	$genoParts[1] = trim($genoParts[1], "\r\n");
 
 	echo "<phenomenet:Genotype rdf:about=\"http://phenomebrowser.org/phenomenet/" .$genoParts[0]. "\" >". "\n";
 	echo "<phenomenet:has_url>http://omim.org/entry/".$genoParts[0]. "</phenomenet:has_url>". "\n";
@@ -21,28 +21,22 @@ while (!feof($genotype) ) { //feof = while not end of file
 	echo "</phenomenet:Genotype>";	//print $genoParts[0]. "<br>" . $genoParts[1]. "<br>" . $genoParts[2] . "<br>"; //prints out the 3 parts
 	$i++;
 	}
-	//if ($genoRow[$i] !== ""){ 
-	//	echo "genoRow line " . $i. ", genoPart 0: " .$genoParts[0] . "<br />";
 	
-	//}
-	//open next file.
 	$phenotype = fopen("Phenotype.sql", "r"); 			//opens file Phenotype.sql
 			$k = 0;
 			while (!feof($phenotype) ){
 			$phenoRow[] = fgets($phenotype);  							//fgets gets line
 			$phenoParts = explode("\t", $phenoRow[$k]); 				//explode using tab delimiter to get 2 strings.
 			$phenoParts = str_replace(':', '_', $phenoParts);
-			$phenoParts[0] = trim($phenoParts[0]);
-			$phenoParts[1] = trim($phenoParts[1]);
+			$phenoParts[0] = trim($phenoParts[0], "\r\n");
+			$phenoParts[1] = trim($phenoParts[1], "\r\n");
 
-			//if ($genoParts[0] == $phenoParts[0]){ 						//look for $genoParts[0] and compare it to $phenoParts[0]
-			//echo $genoParts[0]. " has " . $phenoParts[1]. "<br />" ; 	//prints out the 3 parts
-				echo "<phenomenet:Genotype rdf:about=\"http://phenomebrowser.org/phenomenet/" .$phenoParts[0]. "\" >". "\n";
+			echo "<phenomenet:Genotype rdf:about=\"http://phenomebrowser.org/phenomenet/" .$phenoParts[0]. "\" >". "\n";
 				echo "<phenomenet:has_phenotype rdf:resource=\"http://obofoundry.org/obo/".$phenoParts[1]."\" />". "\n";
 			$k++;
-				//}
+				echo "</phenomenet:Genotype>";
 			
-			//fclose($phenotype);	
+			
 			}
 	$inferred = fopen("InferredPhenotype.sql", "r"); 			//opens file InferredPhenotype.sql
 			$j = 0;
@@ -50,17 +44,12 @@ while (!feof($genotype) ) { //feof = while not end of file
 			$inferredRow[] = fgets($inferred);  							//fgets gets line
 			$inferredParts = explode("\t", $inferredRow[$j]); 				//explode using tab delimiter to get 2 strings.
 			$inferredParts = str_replace(':', '_', $inferredParts);
-			$inferredParts[0] = trim($inferredParts[0]);
-			$inferredParts[1] = trim($inferredParts[1]);
-			//if ($genoParts[0] == $inferredParts[0]){ 						//look for $genoParts[0] and compare it to $phenoParts[0]
-				//echo $genoParts[0]. " has " . $inferredParts[1]. "<br />" ; 	//prints out the 3 parts
-				echo "<phenomenet:Genotype rdf:about=\"http://phenomebrowser.org/phenomenet/" .$inferredParts[0]. "\" >". "\n";
+			$inferredParts[0] = trim($inferredParts[0], "\r\n");
+			$inferredParts[1] = trim($inferredParts[1], "\r\n");
+			echo "<phenomenet:Genotype rdf:about=\"http://phenomebrowser.org/phenomenet/" .$inferredParts[0]. "\" >". "\n";
 				echo "<phenomenet:has_inferred_phenotype rdf:resource=\"http://obofoundry.org/obo/". $inferredParts[1]. "\" />". "\n";
-				//}
-				//if genoPart[0] is equal to inferredPart[0], print stuff
-				//open ontologyTerms.sql
-				//if inferred part[1], is equal to ontologyPart[0] print stuff 
-			$j++;
+				echo "</phenomenet:Genotype>";
+				$j++;
 		
 			}
 			
@@ -70,24 +59,23 @@ while (!feof($genotype) ) { //feof = while not end of file
 			$edgeRow[] = fgets($edge);  							//fgets gets line
 			$edgeParts = explode("\t", $edgeRow[$n]); 				//explode using tab delimiter to get 2 strings.
 			$edgeParts = str_replace(':', '_', $edgeParts);
-			$edgeParts[0] = trim($edgeParts[0]);
-			$edgeParts[1] = trim($edgeParts[1]);
-			$edgeParts[2] = trim($edgeParts[2]);
-			
+			$edgeParts[0] = trim($edgeParts[0], "\r\n");
+			$edgeParts[1] = trim($edgeParts[1], "\r\n");
+			$edgeParts[2] = trim($edgeParts[2], "\r\n");
+			echo "<phenomenet:Genotype rdf:about=\"http://phenomebrowser.org/phenomenet/" .$edgeParts[0]. "\" >". "\n";
+
 			echo"<phenomenet:has_edge>";
-			
-			//if ($genoParts[0] == $edgeParts[0]){ 						//look for $genoParts[0] and compare it to $edgeParts[0] //$edgeparts is 3 strings
-				//echo $genoParts[0]. " similar to " . $edgeParts[1]. " by " . $edgeParts[2] . "<br />" ; 	//prints out the 3 parts
-				//echo "<phenomenet:Edge rdf:about=\"http://phenomebrowser.org/phenomenet/".$edgeParts[0]."_".$edgeParts[1] ."\">";  //need to
 			echo "<phenomenet:Edge rdf:about=\"http://phenomebrowser.org/phenomenet/".$edgeParts[0]."_".$edgeParts[1] ."\">". "\n";
 			echo "<phenomenet:has_node rdf:resource=\"http://phenomebrowser.org/phenomenet/".$edgeParts[0]."\" />". "\n";
 			echo "<phenomenet:has_node rdf:resource=\"http://phenomebrowser.org/phenomenet/".$edgeParts[1]."\" />". "\n";
 			echo "<phenomenet:has_value>".$edgeParts[2]."</phenomenet:has_value>". "\n";
 			echo "</phenomenet:Edge>". "\n";
-			//}
+			echo "</phenomenet:has_edge>". "\n";
+							echo "</phenomenet:Genotype>";
+
 				$n++;
 			
-			echo "</phenomenet:has_edge>". "\n";
+			
 			
 			}
 
@@ -100,11 +88,13 @@ while (!feof($genotype) ) { //feof = while not end of file
 			$ontologyRow[] = fgets($ontology);  							//fgets gets line
 			$ontologyParts = explode("\t", $ontologyRow[$t]); 				//explode using tab delimiter to get 2 strings.
 			$ontologyParts = str_replace(':', '_', $ontologyParts);
-			 	
+ 			$ontologyParts[1] = trim($ontologyParts[1], " ");
+ 			$ontologyParts[1] = trim($ontologyParts[1], "\r\n");
+			
+	
 			echo "<phenomenet:OntologyTerm rdf:about=\"http://obofoundry.org/obo/".$ontologyParts[0]."\">";
 			echo "<phenomenet:has_url>\"http://obofoundry.org/obo/"	.$ontologyParts[0]. "\"</phenomenet:has_url>". "\n";
 			echo "<phenomenet:has_name>". $ontologyParts[1]."</phenomenet:has_name>". "\n";				
-			//echo $ontologyParts[0]. "name is ".$ontologyParts[1]."\n";
 					$t++;
 					echo "</phenomenet:OntologyTerm>";	
 				}

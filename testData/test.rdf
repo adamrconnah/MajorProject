@@ -1,0 +1,1774 @@
+ <?xml version="1.0"?>
+<rdf:RDF 
+xmlns:obo="http://obofoundry.org/obo/" 
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:phenomenet="http://phenomebrowser.org/phenomenet/">
+<phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235409</phenomenet:has_url>
+<phenomenet:has_name>cnbA (strain: [RNAi]cnbA)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235412" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235412</phenomenet:has_url>
+<phenomenet:has_name>gp130 (strain: 1C7)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235414" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235414</phenomenet:has_url>
+<phenomenet:has_name>gp130 (strain: 2F5)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235425" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235425</phenomenet:has_url>
+<phenomenet:has_name>abpB | fimA (strain: abpB-/fimA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235444" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235444</phenomenet:has_url>
+<phenomenet:has_name>eppA (strain: [act6]:myc:eppA(S250A))</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235445" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235445</phenomenet:has_url>
+<phenomenet:has_name>eppA (strain: [act6]:myc:eppA(S325A))</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235456" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235456</phenomenet:has_url>
+
+<phenomenet:has_name>abpA | abpC (strain: abpA-/abpC-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235474" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235474</phenomenet:has_url>
+<phenomenet:has_name>alxA (strain: alxA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235475" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235475</phenomenet:has_url>
+<phenomenet:has_name>alxA (strain: alxA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235491</phenomenet:has_url>
+<phenomenet:has_name>amiB (strain: amiB-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235493</phenomenet:has_url>
+<phenomenet:has_name>ampA (strain: ampA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235505</phenomenet:has_url>
+<phenomenet:has_name>apm1 (strain: apm1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235507" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235507</phenomenet:has_url>
+<phenomenet:has_name>apm3 (strain: apm3-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235509</phenomenet:has_url>
+
+<phenomenet:has_name>aprA (strain: aprA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235510" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235510</phenomenet:has_url>
+<phenomenet:has_name>aprA (strain: aprA-/actin15::aprA)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235511" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235511</phenomenet:has_url>
+<phenomenet:has_name>arkA (strain: arkA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235513" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235513</phenomenet:has_url>
+<phenomenet:has_name>alrA (strain: alrA-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235563" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235563</phenomenet:has_url>
+<phenomenet:has_name>capB (strain: capB-truncated)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235568" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235568</phenomenet:has_url>
+<phenomenet:has_name>carD (strain: car4-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235573" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235573</phenomenet:has_url>
+<phenomenet:has_name>carmil (strain: carmil-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235584" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235584</phenomenet:has_url>
+
+<phenomenet:has_name>cf45-1 (strain: CF45-1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235585" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235585</phenomenet:has_url>
+<phenomenet:has_name>cf50-1 (strain: CF50-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235589" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235589</phenomenet:has_url>
+<phenomenet:has_name>chcA (strain: chcA-/[cotB]:lacZ)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235590" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235590</phenomenet:has_url>
+<phenomenet:has_name>chcA (strain: chcA-/[ecmA]:lacZ)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235591" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235591</phenomenet:has_url>
+<phenomenet:has_name>chcA (strain: chcA-/[ecmB]:lacZ)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235592" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235592</phenomenet:has_url>
+<phenomenet:has_name>chcA (strain: chcA-/[pspA]:lacZ)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235596" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235596</phenomenet:has_url>
+<phenomenet:has_name>ChLim (strain: ChLim-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235612" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235612</phenomenet:has_url>
+
+<phenomenet:has_name>cmfB (strain: CMFR1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235624" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235624</phenomenet:has_url>
+<phenomenet:has_name>ctnA (strain: ctnA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235627" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235627</phenomenet:has_url>
+<phenomenet:has_name>crlA (strain: crlA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235633" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235633</phenomenet:has_url>
+<phenomenet:has_name>crtf (strain: crtf-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235634" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235634</phenomenet:has_url>
+<phenomenet:has_name>csn5 (strain: csn5-KD)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235636" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235636</phenomenet:has_url>
+<phenomenet:has_name>ctnB (strain: ctnB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235639" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235639</phenomenet:has_url>
+<phenomenet:has_name>cudA (strain: cudA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235653" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235653</phenomenet:has_url>
+
+<phenomenet:has_name>darA (strain: darA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235659" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235659</phenomenet:has_url>
+<phenomenet:has_name>DD3-3 (strain: DD3-3-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235661" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235661</phenomenet:has_url>
+<phenomenet:has_name>cdk8 (strain: cdk8-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235695" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235695</phenomenet:has_url>
+<phenomenet:has_name>dgkA (strain: dgkA-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235710" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235710</phenomenet:has_url>
+<phenomenet:has_name>dhkK (strain: dhkK-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235901" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235901</phenomenet:has_url>
+<phenomenet:has_name>dimB (strain: dimB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235915" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235915</phenomenet:has_url>
+<phenomenet:has_name>dng1 (strain: dng1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235916" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235916</phenomenet:has_url>
+
+<phenomenet:has_name>dnmA (strain: dnmA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235917" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235917</phenomenet:has_url>
+<phenomenet:has_name>dnmA (strain: dnmA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235922" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235922</phenomenet:has_url>
+<phenomenet:has_name>drnA-1 (strain: drnA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235925" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235925</phenomenet:has_url>
+<phenomenet:has_name>dstA (strain: dstA-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235926" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235926</phenomenet:has_url>
+<phenomenet:has_name>dstA (strain: dstA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235931" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235931</phenomenet:has_url>
+<phenomenet:has_name>dstB (strain: dstB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235947" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235947</phenomenet:has_url>
+<phenomenet:has_name>eppA (strain: eppA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235960" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235960</phenomenet:has_url>
+
+<phenomenet:has_name>fcsA (strain: fcsA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235961" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235961</phenomenet:has_url>
+<phenomenet:has_name>fimA (strain: fimA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235970" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235970</phenomenet:has_url>
+<phenomenet:has_name>forH (strain: forH-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235971" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235971</phenomenet:has_url>
+<phenomenet:has_name>forH (strain: forH-/[act15]:GFP:forH)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235976" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235976</phenomenet:has_url>
+<phenomenet:has_name>fszA (strain: fszA- )</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235978" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235978</phenomenet:has_url>
+<phenomenet:has_name>fszA | fszB (strain: fszA-/fszB- )</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235979" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235979</phenomenet:has_url>
+<phenomenet:has_name>fszA (strain: [act15]:fszA:GFP)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235980" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235980</phenomenet:has_url>
+
+<phenomenet:has_name>fszB (strain: fszB- )</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235986" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235986</phenomenet:has_url>
+<phenomenet:has_name>gpaC (strain: gpaC-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235989" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235989</phenomenet:has_url>
+<phenomenet:has_name>gadA (strain: gadA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235992" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235992</phenomenet:has_url>
+<phenomenet:has_name>pdeD | pdeE (strain: gbpA-/gbpB-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235993" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235993</phenomenet:has_url>
+<phenomenet:has_name>pdeE (strain: gbpB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235994" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235994</phenomenet:has_url>
+<phenomenet:has_name>gbpC (strain: gbpC-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235995" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235995</phenomenet:has_url>
+<phenomenet:has_name>gbpC (strain: gbpC-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235996" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235996</phenomenet:has_url>
+
+<phenomenet:has_name>gbpC | gbpD (strain: gbpC-/gbpD-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235997" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235997</phenomenet:has_url>
+<phenomenet:has_name>gbpD (strain: gbpD-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235998" >
+<phenomenet:has_url>http://omim.org/entry/DBS0235998</phenomenet:has_url>
+<phenomenet:has_name>gbpD (strain: gbpD-/[act15]:gbpD)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236000" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236000</phenomenet:has_url>
+<phenomenet:has_name>gcA | sgcA (strain: gca-/sgcA-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236002" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236002</phenomenet:has_url>
+<phenomenet:has_name>gcsA (strain: gcsA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236004" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236004</phenomenet:has_url>
+<phenomenet:has_name>gdt1 (strain: gdt1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236006" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236006</phenomenet:has_url>
+<phenomenet:has_name>gdt2 (strain: gdt2-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236009" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236009</phenomenet:has_url>
+
+<phenomenet:has_name>gefB (strain: gefB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236010" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236010</phenomenet:has_url>
+<phenomenet:has_name>gefB | rasS (strain: gefB-/rasS-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236058" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236058</phenomenet:has_url>
+<phenomenet:has_name>vmp1 (strain: vmp1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236077" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236077</phenomenet:has_url>
+<phenomenet:has_name>abpC (strain: abpC-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236078" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236078</phenomenet:has_url>
+<phenomenet:has_name>glpD (strain: glpD-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236084" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236084</phenomenet:has_url>
+<phenomenet:has_name>cfrA | cfrB | cfrC | cfrD (strain: GP138A-/GP138B-/GP138C-/GP138D-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236091" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236091</phenomenet:has_url>
+<phenomenet:has_name>gpaA (strain: gpaA-/[ecmB]:lacZ)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236095" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236095</phenomenet:has_url>
+
+<phenomenet:has_name>gdt1 | gpaB (strain: gdt1-/gpaB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236112" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236112</phenomenet:has_url>
+<phenomenet:has_name>grlE (strain: grlE-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236113" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236113</phenomenet:has_url>
+<phenomenet:has_name>grlE (strain: grlE-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236163" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236163</phenomenet:has_url>
+<phenomenet:has_name>helF (strain: helF-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236304" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236304</phenomenet:has_url>
+<phenomenet:has_name>atg1 (strain: atg1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236305" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236305</phenomenet:has_url>
+<phenomenet:has_name>atg1 (strain: atg1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236307" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236307</phenomenet:has_url>
+<phenomenet:has_name>dcsA (strain: dcsA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236425" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236425</phenomenet:has_url>
+
+<phenomenet:has_name>ino1 (strain: ino1-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236444" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236444</phenomenet:has_url>
+<phenomenet:has_name>cbfA (strain: JH.D)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236492" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236492</phenomenet:has_url>
+<phenomenet:has_name>krsA (strain: krsA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236499" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236499</phenomenet:has_url>
+<phenomenet:has_name>limB (strain: limB-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236515" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236515</phenomenet:has_url>
+<phenomenet:has_name>lis1 (strain: lis1(D327H))</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236516" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236516</phenomenet:has_url>
+<phenomenet:has_name>lrrA (strain: lrrA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236517" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236517</phenomenet:has_url>
+<phenomenet:has_name>lst8 (strain: lst8-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236521" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236521</phenomenet:has_url>
+
+<phenomenet:has_name>lvsB (strain: lvsB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236539" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236539</phenomenet:has_url>
+<phenomenet:has_name>abcG18 | abcG2 (strain: abcG2-/abcG18-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236540" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236540</phenomenet:has_url>
+<phenomenet:has_name>abcG18 | abcG2 | rtoA (strain: abcG2-/abcG18-/rtoA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236559" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236559</phenomenet:has_url>
+<phenomenet:has_name>midA (strain: midA-)</phenomenet:has_name>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236560" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236560</phenomenet:has_url>
+<phenomenet:has_name>mkcA (strain: mkcA-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236566" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236566</phenomenet:has_url>
+<phenomenet:has_name>mlcE (strain: mlcE-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236570" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236570</phenomenet:has_url>
+<phenomenet:has_name>mybB (strain: mybB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236580" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236580</phenomenet:has_url>
+
+<phenomenet:has_name>myoB (strain: myoB-)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236583" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236583</phenomenet:has_url>
+<phenomenet:has_name>myoB | myoD (strain: myoB-/[AS]myoD)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0236584" >
+<phenomenet:has_url>http://omim.org/entry/DBS0236584</phenomenet:has_url>
+<phenomenet:has_name>myoB | myoC | myoD (strain: myoB-/[AS]myoD/[KD]myoC)</phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/" >
+<phenomenet:has_url>http://omim.org/entry/</phenomenet:has_url>
+<phenomenet:has_name></phenomenet:has_name>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000300" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000383" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000546" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001054" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235411" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000077" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235411" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001108" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235411" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001109" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235412" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235412" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000171" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235412" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000393" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235413" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000385" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235414" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235414" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000171" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235414" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000393" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235425" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000077" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235425" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000379" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235425" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000504" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235426" >
+
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235427" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000138" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235427" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000145" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235427" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000154" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235427" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235428" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000478" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235440" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000173" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235442" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001080" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235444" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235444" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000394" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235444" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001011" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235445" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000394" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235456" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000148" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235456" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000154" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235456" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000188" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235456" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000394" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235456" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001067" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235457" >
+
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000547" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235473" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235474" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235474" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000159" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235474" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000394" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235475" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235475" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000026" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235475" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000300" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235475" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000424" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235476" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235477" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235478" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235479" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235480" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235481" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235482" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235483" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235484" >
+
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235485" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235486" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235487" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235488" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235489" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000405" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235490" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001080" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000123" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000130" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000300" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000305" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000522" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235491" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001080" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000109" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000157" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000191" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000213" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001115" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001116" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001117" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235501" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000161" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235502" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000161" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235503" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000168" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000162" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000230" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000232" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000233" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000394" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000549" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235505" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001068" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235507" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000230" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235507" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000430" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235507" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001112" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235507" >
+
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0001238" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235508" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000142" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000111" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000145" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000149" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000171" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235509" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000504" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235510" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235510" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000394" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235511" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000009" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235511" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000301" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235512" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000483" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235513" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000111" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235513" >
+<phenomenet:has_phenotype rdf:resource="http://obofoundry.org/obo/DDPHENO_0000121" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000002" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000003" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000004" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053101" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053102" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053102" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005621" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005620" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003313" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0004142" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005266" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0002064" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0002066" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0002106" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0009046" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003633" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000243" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003492" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003491" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005369" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005371" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005376" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001392" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005382" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005384" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005386" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005385" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005387" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005390" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005391" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005323" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0004924" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000947" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000745" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000743" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053106" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053106" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053105" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053105" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053104" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053104" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053103" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053103" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053107" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003631" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053107" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001270" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005378" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005381" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005382" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005385" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005388" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005387" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005390" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314240" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002821" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002821" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002820" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002820" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001732" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001731" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003956" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0002089" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005378" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005385" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005387" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001262" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001260" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001265" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001264" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001259" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002825" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003698" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0003699" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0002161" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001919" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001921" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001924" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005378" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005389" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005385" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005387" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0001270" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002829" >
+
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002810" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002810" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002812" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002812" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002811" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002811" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002814" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002814" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002813" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002813" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002816" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002816" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002815" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002815" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0000001" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBRNAi00002818" >
+<phenomenet:has_inferred_phenotype rdf:resource="http://obofoundry.org/obo/MP_0005380" />
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409_DBS0235409">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235409" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235409" />
+<phenomenet:has_value>1.0</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235409" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.11</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>1.0</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ZDB-GENE-040526-1" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ZDB-GENE-040526-1_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ZDB-GENE-040526-1" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1134</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156190" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156190_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156190" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1081</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_3839235" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_3839235_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_3839235" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1048</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ZDB-GENO-070309-5" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ZDB-GENO-070309-5_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ZDB-GENO-070309-5" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1217</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_144755" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_144755_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_144755" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.134</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314500" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314500_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314500" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1165</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_311050" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_311050_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_311050" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1863</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_311070" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_311070_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_311070" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.11</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_311100" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_311100_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_311100" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1652</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156200" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156200_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156200" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.317</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34915" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34915_ANIKA1OMIM_314250">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34915" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1395</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493_DBS0235493">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235493" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235493" />
+<phenomenet:has_value>1.0</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001122" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001122_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001122" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1147</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001126" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001126_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001126" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.138</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001125" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001125_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001125" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>0.1147</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001128" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001128_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001128" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1147</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001129" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001129_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001129" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1073</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001135" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001135_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001135" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1094</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178377" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178377_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_178377" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1014</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001198" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001198_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001198" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1411</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001184" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001184_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001184" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1195</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34903" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34903_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34903" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1007</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34904" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34904_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34904" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1146</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001178" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001178_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001178" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1411</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34952" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34952_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34952" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1396</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34959" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34959_ANIKA1OMIM_314250">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34959" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1192</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34953" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34953_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34953" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1396</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34955" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34955_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34955" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1445</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34983" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34983_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34983" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1343</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34986" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34986_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34986" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>0.1044</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_2684216" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_2684216_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_2684216" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1356</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239400" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239400_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239400" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1064</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001118" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001118_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001118" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1092</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001119" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001119_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001119" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1147</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001117" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001117_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001117" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1147</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001120" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001120_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001120" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1147</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34811" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34811_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34811" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1103</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34814" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34814_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34814" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1589</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34815" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34815_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34815" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1631</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001007" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001007_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001007" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1078</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314580" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314580_ANIKA1OMIM_314250">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314580" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.194</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34877" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34877_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34877" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1159</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34881" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34881_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34881" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1919</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34882" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34882_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34882" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1803</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34880" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34880_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34880" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>0.1264</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_540000" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_540000_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_540000" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1228</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_227150" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_227150_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_227150" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.2317</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239500" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239500_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239500" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.3119</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239510" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239510_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239510" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1216</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34708" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34708_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34708" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1179</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34705" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34705_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34705" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1349</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34728" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34728_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34728" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1206</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34731" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34731_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34731" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1189</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34736" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34736_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34736" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1996</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34740" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34740_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34740" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1224</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34751" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34751_ANIKA1OMIM_314250">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34751" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1138</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34782" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34782_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34782" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1142</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34781" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34781_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34781" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1106</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_3587421" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_3587421_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_3587421" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1043</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34610" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34610_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34610" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>0.288</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_305550" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_305550_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_305550" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1731</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34608" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34608_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34608" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1276</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178487" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178487_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_178487" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.113</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_166002" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_166002_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_166002" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1066</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34665" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34665_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34665" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.135</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34666" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34666_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34666" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1218</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178475" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178475_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_178475" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1452</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178478" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178478_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_178478" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1334</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178481" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178481_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_178481" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1798</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34674" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI-GT_34674_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI-GT_34674" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1029</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_109150" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_109150_ANIKA1OMIM_314250">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_109150" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1461</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239300" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239300_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_239300" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1035</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001528" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001528_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001528" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1327</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_3587609" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_3587609_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_3587609" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.3102</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001533" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001533_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001533" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>0.1411</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001531" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001531_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001531" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1327</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001540" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001540_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001540" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1327</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001547" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001547_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001547" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1289</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001579" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001579_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001579" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1062</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001580" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001580_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001580" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1019</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_3575120" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_3575120_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_3575120" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1156</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_235830" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_235830_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_235830" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.2044</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001412" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001412_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001412" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1523</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_273770" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_273770_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_273770" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.117</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156850" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156850_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_156850" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.12</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0121499" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/FBal0121499_ANIKA1OMIM_314250">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/FBal0121499" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1865</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178045" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ORPHANET_178045_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ORPHANET_178045" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1622</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_2684825" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_2684825_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_2684825" />
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1778</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_144120" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_144120_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_144120" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.2029</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001980" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001980_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001980" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+
+<phenomenet:has_value>0.132</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/FBal0053582" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/FBal0053582_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/FBal0053582" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1018</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/OMIM_162210" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/OMIM_162210_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/OMIM_162210" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1071</phenomenet:has_value>
+
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_1915835" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_1915835_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_1915835" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1337</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001731" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001731_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001731" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1214</phenomenet:has_value>
+</phenomenet:Edge>
+
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_3839863" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_3839863_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_3839863" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1301</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001709" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001709_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001709" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1411</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001613" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001613_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001613" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1518</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/MGI_1915674" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/MGI_1915674_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/MGI_1915674" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1377</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001689" >
+
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001689_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001689" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1061</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001682" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/WBGene00001682_ANIKA1OMIM_314250">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/WBGene00001682" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/ANIKA1OMIM_314250" />
+<phenomenet:has_value>0.1671</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/DBS0235409_DBS0235409">
+
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235409" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235409" />
+<phenomenet:has_value>1.0</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:Genotype rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493" >
+<phenomenet:has_edge><phenomenet:Edge rdf:about="http://phenomebrowser.org/phenomenet/DBS0235493_DBS0235409">
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235493" />
+<phenomenet:has_node rdf:resource="http://phenomebrowser.org/phenomenet/DBS0235409" />
+<phenomenet:has_value>0.041</phenomenet:has_value>
+</phenomenet:Edge>
+</phenomenet:has_edge>
+</phenomenet:Genotype><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000001"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000001"</phenomenet:has_url>
+<phenomenet:has_name>mammalian phenotype</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000002"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000002"</phenomenet:has_url>
+<phenomenet:has_name>Morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000003"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000003"</phenomenet:has_url>
+<phenomenet:has_name>abnormal adipose tissue morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000005"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000005"</phenomenet:has_url>
+<phenomenet:has_name>increased brown adipose tissue amount</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000008"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000008"</phenomenet:has_url>
+<phenomenet:has_name>increased white adipose tissue amount</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000010"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000010"</phenomenet:has_url>
+
+<phenomenet:has_name>abnormal abdominal fat pad morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000012"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000012"</phenomenet:has_url>
+<phenomenet:has_name>loss of subcutaneous adipose tissue</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000013"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000013"</phenomenet:has_url>
+<phenomenet:has_name>abnormal adipose tissue distribution</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000015"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000015"</phenomenet:has_url>
+<phenomenet:has_name>abnormal ear pigmentation</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000017"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000017"</phenomenet:has_url>
+<phenomenet:has_name>big ears</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000018"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000018"</phenomenet:has_url>
+<phenomenet:has_name>small ears</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000019"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000019"</phenomenet:has_url>
+<phenomenet:has_name>thick ears</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000020"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000020"</phenomenet:has_url>
+<phenomenet:has_name>scaly ears</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000021"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000021"</phenomenet:has_url>
+<phenomenet:has_name>prominent ears</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000022"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000022"</phenomenet:has_url>
+
+<phenomenet:has_name>abnormal ear shape</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000023"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000023"</phenomenet:has_url>
+<phenomenet:has_name>abnormal ear distance/ position</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000024"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000024"</phenomenet:has_url>
+<phenomenet:has_name>lowered ear position</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000025"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000025"</phenomenet:has_url>
+<phenomenet:has_name>otic hypertelorism</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000026"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000026"</phenomenet:has_url>
+<phenomenet:has_name>abnormal inner ear morphology</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000027"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000027"</phenomenet:has_url>
+<phenomenet:has_name>horizontal canal defects</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000028"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000028"</phenomenet:has_url>
+<phenomenet:has_name>abnormal pars superior vestibularis morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000029"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000029"</phenomenet:has_url>
+<phenomenet:has_name>abnormal malleus morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000030"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000030"</phenomenet:has_url>
+<phenomenet:has_name>abnormal tympanic ring morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000031"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000031"</phenomenet:has_url>
+
+<phenomenet:has_name>abnormal cochlea morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000032"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000032"</phenomenet:has_url>
+<phenomenet:has_name>cochlear degeneration</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000033"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000033"</phenomenet:has_url>
+<phenomenet:has_name>absent scala media</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000034"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000034"</phenomenet:has_url>
+<phenomenet:has_name>abnormal vestibule morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000035"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000035"</phenomenet:has_url>
+<phenomenet:has_name>abnormal membranous labyrinth morphology</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000036"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000036"</phenomenet:has_url>
+<phenomenet:has_name>absent semicircular canals</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000037"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000037"</phenomenet:has_url>
+<phenomenet:has_name>abnormal lateral semicircular canal morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000038"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000038"</phenomenet:has_url>
+<phenomenet:has_name>thin semicircular canals</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000039"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000039"</phenomenet:has_url>
+<phenomenet:has_name>abnormal otic capsule morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000040"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000040"</phenomenet:has_url>
+
+<phenomenet:has_name>absent middle ear ossicles</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000041"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000041"</phenomenet:has_url>
+<phenomenet:has_name>absent endolymphatic duct</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000042"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000042"</phenomenet:has_url>
+<phenomenet:has_name>abnormal organ of Corti morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000043"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000043"</phenomenet:has_url>
+<phenomenet:has_name>organ of Corti degeneration</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000044"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000044"</phenomenet:has_url>
+<phenomenet:has_name>absent organ of Corti</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000045"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000045"</phenomenet:has_url>
+<phenomenet:has_name>abnormal hair cell morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000046"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000046"</phenomenet:has_url>
+<phenomenet:has_name>abnormal sulcus ampullaris morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000047"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000047"</phenomenet:has_url>
+<phenomenet:has_name>abnormal interdental cells</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000048"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000048"</phenomenet:has_url>
+<phenomenet:has_name>abnormal stria vascularis morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000049"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000049"</phenomenet:has_url>
+
+<phenomenet:has_name>abnormal middle ear morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000051"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000051"</phenomenet:has_url>
+<phenomenet:has_name>absent process brevus</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000052"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000052"</phenomenet:has_url>
+<phenomenet:has_name>early ear unfolding</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000053"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000053"</phenomenet:has_url>
+<phenomenet:has_name>excessive ear growth</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000054"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000054"</phenomenet:has_url>
+<phenomenet:has_name>delayed ear emergence</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000060"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000060"</phenomenet:has_url>
+<phenomenet:has_name>delayed bone ossification</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000061"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000061"</phenomenet:has_url>
+<phenomenet:has_name>fragile skeleton</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000062"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000062"</phenomenet:has_url>
+<phenomenet:has_name>increased bone mineral density</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000063"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000063"</phenomenet:has_url>
+<phenomenet:has_name>decreased bone mineral density</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000064"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000064"</phenomenet:has_url>
+
+<phenomenet:has_name>failure of secondary bone resorption</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000065"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000065"</phenomenet:has_url>
+<phenomenet:has_name>abnormal bone marrow cavity morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000066"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000066"</phenomenet:has_url>
+<phenomenet:has_name>osteoporosis</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000067"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000067"</phenomenet:has_url>
+<phenomenet:has_name>osteopetrosis</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000069"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000069"</phenomenet:has_url>
+<phenomenet:has_name>kyphoscoliosis</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000071"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000071"</phenomenet:has_url>
+<phenomenet:has_name>axial skeleton hypoplasia</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000073"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000073"</phenomenet:has_url>
+<phenomenet:has_name>absent craniofacial bones</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000074"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000074"</phenomenet:has_url>
+<phenomenet:has_name>abnormal neurocranium morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000075"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000075"</phenomenet:has_url>
+<phenomenet:has_name>absent neurocranium</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000077"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000077"</phenomenet:has_url>
+
+<phenomenet:has_name>abnormal interparietal bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000078"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000078"</phenomenet:has_url>
+<phenomenet:has_name>abnormal supraoccipital bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000079"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000079"</phenomenet:has_url>
+<phenomenet:has_name>abnormal basioccipital bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000080"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000080"</phenomenet:has_url>
+<phenomenet:has_name>abnormal exoccipital bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000081"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000081"</phenomenet:has_url>
+<phenomenet:has_name>premature suture closure</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000082"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000082"</phenomenet:has_url>
+<phenomenet:has_name>overlapping parietal bones</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000083"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000083"</phenomenet:has_url>
+<phenomenet:has_name>ectopic cranial bone growth</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000084"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000084"</phenomenet:has_url>
+<phenomenet:has_name>abnormal fontanelle morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000085"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000085"</phenomenet:has_url>
+<phenomenet:has_name>large anterior fontanelle</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000087"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000087"</phenomenet:has_url>
+
+<phenomenet:has_name>absent mandible</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000088"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000088"</phenomenet:has_url>
+<phenomenet:has_name>short mandible</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000090"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000090"</phenomenet:has_url>
+<phenomenet:has_name>absent premaxilla</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000091"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000091"</phenomenet:has_url>
+<phenomenet:has_name>short premaxilla</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000094"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000094"</phenomenet:has_url>
+<phenomenet:has_name>absent alveolar process</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000097"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000097"</phenomenet:has_url>
+<phenomenet:has_name>short maxilla</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000098"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000098"</phenomenet:has_url>
+<phenomenet:has_name>abnormal vomer bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000099"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000099"</phenomenet:has_url>
+<phenomenet:has_name>absent vomer bone</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000100"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000100"</phenomenet:has_url>
+<phenomenet:has_name>abnormal ethmoidal bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000101"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000101"</phenomenet:has_url>
+
+<phenomenet:has_name>absent ethmoidal bone</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000102"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000102"</phenomenet:has_url>
+<phenomenet:has_name>abnormal nasal bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000103"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000103"</phenomenet:has_url>
+<phenomenet:has_name>nasal bone hypoplasia</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000104"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000104"</phenomenet:has_url>
+<phenomenet:has_name>abnormal sphenoid bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000105"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000105"</phenomenet:has_url>
+<phenomenet:has_name>impaired ossification of basisphenoid bone</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000106"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000106"</phenomenet:has_url>
+<phenomenet:has_name>abnormal basisphenoid bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000107"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000107"</phenomenet:has_url>
+<phenomenet:has_name>abnormal frontal bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000108"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000108"</phenomenet:has_url>
+<phenomenet:has_name>midline facial cleft</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000109"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000109"</phenomenet:has_url>
+<phenomenet:has_name>abnormal parietal bone morphology</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000111"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000111"</phenomenet:has_url>
+
+<phenomenet:has_name>cleft palate</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000114"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000114"</phenomenet:has_url>
+<phenomenet:has_name>cleft chin</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000116"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000116"</phenomenet:has_url>
+<phenomenet:has_name>abnormal tooth development</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000117"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000117"</phenomenet:has_url>
+<phenomenet:has_name>absent tooth primordium</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000118"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000118"</phenomenet:has_url>
+<phenomenet:has_name>arrest of tooth development</phenomenet:has_name>
+
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000119"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000119"</phenomenet:has_url>
+<phenomenet:has_name>abnormal tooth eruption</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000120"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000120"</phenomenet:has_url>
+<phenomenet:has_name>malocclusion</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000121"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000121"</phenomenet:has_url>
+<phenomenet:has_name>failure of tooth eruption</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000122"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000122"</phenomenet:has_url>
+<phenomenet:has_name>accelerated tooth eruption</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000124"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000124"</phenomenet:has_url>
+
+<phenomenet:has_name>absent teeth</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000125"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000125"</phenomenet:has_url>
+<phenomenet:has_name>absent incisors</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000126"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000126"</phenomenet:has_url>
+<phenomenet:has_name>brittle teeth</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000127"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000127"</phenomenet:has_url>
+<phenomenet:has_name>degenerate molars</phenomenet:has_name>
+</phenomenet:OntologyTerm><phenomenet:OntologyTerm rdf:about="http://obofoundry.org/obo/MP_0000128"><phenomenet:has_url>"http://obofoundry.org/obo/MP_0000128"</phenomenet:has_url>
+<phenomenet:has_name>growth retardation of molars</phenomenet:has_name>
+
+</phenomenet:OntologyTerm></rdf:RDF>
