@@ -1,0 +1,15 @@
+what?
+Create rdf store
+Fast analysis between phenotypes in animals, between experimental data and symptons in humans
+Interface for inexp users.
+
+why?
+RDF store , suits decentralized system, facilitates analysis of data that resides in a variety of sources.
+
+overcomes problems of shared schemas.  data can be stored and queried without schema.
+schema created from data.
+
+
+SPARQL consists of operations that are reasonably similar to those found in existing and mature technologies
+ such SQL or relational algebra including: join, union, left outer join (SPARQL's OPTIONAL), and comparison operators
+ (SPARQL's FILTER) such as equal to, less than, greater than, etc. [8]
