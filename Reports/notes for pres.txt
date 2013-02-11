@@ -12,4 +12,9 @@ schema created from data.
 
 SPARQL consists of operations that are reasonably similar to those found in existing and mature technologies
  such SQL or relational algebra including: join, union, left outer join (SPARQL's OPTIONAL), and comparison operators
- (SPARQL's FILTER) such as equal to, less than, greater than, etc. [8]
+ (SPARQL's FILTER) such as equal to, less than, greater than, etc.
+ 
+relational model
+querying the Semantic Web with SPARQL, can be seen as an extension of an existing relational model.
+The standard relational model is not sufficient, however, and must be extended to support untyped relations, and integrate data sources
+ 
