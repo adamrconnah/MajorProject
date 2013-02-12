@@ -21,6 +21,8 @@ while (!feof($genotype) ) { //feof = while not end of file
 	echo "</phenomenet:Genotype>";	//print $genoParts[0]. "<br>" . $genoParts[1]. "<br>" . $genoParts[2] . "<br>"; //prints out the 3 parts
 	$i++;
 	}
+	fclose($genotype);	
+
 	
 	$phenotype = fopen("Phenotype.sql", "r"); 			//opens file Phenotype.sql
 			$k = 0;
@@ -36,8 +38,10 @@ while (!feof($genotype) ) { //feof = while not end of file
 			$k++;
 				echo "</phenomenet:Genotype>";
 			
-			
 			}
+				fclose($phenotype);	
+
+			
 	$inferred = fopen("InferredPhenotype.sql", "r"); 			//opens file InferredPhenotype.sql
 			$j = 0;
 			while (!feof($inferred) ){
@@ -52,6 +56,8 @@ while (!feof($genotype) ) { //feof = while not end of file
 				$j++;
 		
 			}
+			fclose($inferred);	
+
 			
 	$edge = fopen("Edge.sql", "r"); 			//opens file InferredPhenotype.sql
 			$n= 0;
@@ -74,10 +80,10 @@ while (!feof($genotype) ) { //feof = while not end of file
 							echo "</phenomenet:Genotype>";
 
 				$n++;
-			
-			
+					
 			
 			}
+			fclose($edge);	
 
 			
 	
@@ -98,6 +104,7 @@ while (!feof($genotype) ) { //feof = while not end of file
 					$t++;
 					echo "</phenomenet:OntologyTerm>";	
 				}
+			fclose($ontology);	
 
 
 
@@ -112,4 +119,3 @@ when it gets to a line of phenotype.sql where the genoparts[0] is not equal to p
  */
 	//echo $genoRow[1];
 
-fclose($genotype);	
