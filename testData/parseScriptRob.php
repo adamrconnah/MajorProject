@@ -8,16 +8,12 @@ xmlns:phenomenet=\"http://phenomebrowser.org/phenomenet/\">" . "\n";
 $genotype = fopen("Genotype.sql", "r"); //opens file Genotype.sql
 $genotypeout = fopen("Genotype.rdf", "w");
 //53687091200
-$fileNum=1;
+//$fileNum=1;
 $i=0;
 while (!feof($genotype) ) { //feof = while not end of file
-
-	//if (filesize("Genotype".$fileNum."".rdf" 
-	/*if ($contents = fread($genotypeout,53687091200)); 
-	{    file_put_contents('Genotype'.$fileNum.'.txt',$contents);
-    $fileNum++;	
-	}
- */
+	//$contents = fread($genotypeout,53687091200);
+  //  file_put_contents('Genotype'.$fileNum.'.txt',$contents);
+   // $fileNum++;
 	$genoRow[] = fgets($genotype);  //fgets gets line
 	$genoParts = explode("\t", $genoRow[$i]); //explode using tab delimiter to get 3 strings.
 	$genoParts[0] = str_replace(':', '_', $genoParts[0]);
