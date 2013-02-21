@@ -13,14 +13,12 @@ clearstatcache();
 
 $filename = "Edge".$fileNum .".rdf"; 
 
-echo $filename;
 
 $edgetypeout = fopen($filename, "a");
 
 
 //echo filesize("Edge1.rdf");
         if (filesize($filename) > 1000000000) { //091200                                                                                                                                       
-	  echo "Edge".$fileNum .".rdf" ;
 	  fclose($edgetypeout);
 	  $edgetypeout = fopen("Edge".$fileNum .".rdf", "a");
 	  $read = 0;

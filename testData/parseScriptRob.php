@@ -8,12 +8,16 @@ xmlns:phenomenet=\"http://phenomebrowser.org/phenomenet/\">" . "\n";
 $genotype = fopen("Genotype.sql", "r"); //opens file Genotype.sql
 $genotypeout = fopen("Genotype.rdf", "w");
 //53687091200
-//$fileNum=1;
+$fileNum=1;
 $i=0;
 while (!feof($genotype) ) { //feof = while not end of file
-	//$contents = fread($genotypeout,53687091200);
-  //  file_put_contents('Genotype'.$fileNum.'.txt',$contents);
-   // $fileNum++;
+
+	//if (filesize("Genotype".$fileNum."".rdf" 
+	/*if ($contents = fread($genotypeout,53687091200)); 
+	{    file_put_contents('Genotype'.$fileNum.'.txt',$contents);
+    $fileNum++;	
+	}
+ */
 	$genoRow[] = fgets($genotype);  //fgets gets line
 	$genoParts = explode("\t", $genoRow[$i]); //explode using tab delimiter to get 3 strings.
 	$genoParts[0] = str_replace(':', '_', $genoParts[0]);
@@ -76,7 +80,7 @@ while (!feof($genotype) ) { //feof = while not end of file
 			fclose($inferredtypeout);	
 
 			
-	$edge = fopen("Edge.sql", "r"); 			//opens file InferredPhenotype.sql
+/*	$edge = fopen("Edge.sql", "r"); 			//opens file InferredPhenotype.sql
 	$edgetypeout = fopen("Edge.rdf", "w"); 			//opens file Phenotype.sql
 
 			$n= 0;
@@ -109,7 +113,7 @@ while (!feof($genotype) ) { //feof = while not end of file
 			fclose($edge);	
 			fclose($edgetypeout);
 			
-	
+*/	
 	
 	$ontology = fopen("OntologyTerms.sql", "r"); 			//opens file InferredPhenotype.sql
 	$ontologytypeout = fopen("OntologyTerms.rdf", "w"); 			//opens file Phenotype.sql
