@@ -44,6 +44,18 @@ echo "<table>";
 foreach($result as $line){
   $value = $line['?dis'];
   $value2 =$line['?name'];  
+	if (preg_match('/"([^"]+)"/', $value, $m)) {
+    $value = $m[0];   
+		$c=explode("/", $value);
+	$value=end($c);
+
+} 
+
+	if (preg_match('/"([^"]+)"/', $value2, $n)) {
+	str_replace('"', "", $n[0]);
+	    $value2 = $n[0]; 
+
+} 
     if($value != ""){
       //echo $value->toString()."..... ".$value2->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $value2->toString()."<br>";
