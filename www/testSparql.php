@@ -9,8 +9,8 @@ $client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sp
 //Find the name of all diseases
 $querystring = '
 PREFIX dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=elements#title>
-SELECT *
-where   { ?x ?y ?z } ';
+SELECT ?x
+where   { ?x ?y ?z } Limit 20';
 
 //To execute the query, we create a new ClientQuery 
 //object and pass it to the SPARQL client:
