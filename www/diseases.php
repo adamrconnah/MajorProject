@@ -1,3 +1,39 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Phenomanal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery.carouFredSel-5.5.2.js"></script>
+<script src="scripts/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="scripts/html5.js"></script>
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<![endif]-->
+</head>
+<body>
+<div class="wrapper">
+	<div id="top" class="clearfix">
+		<!-- add in logo -->
+		<div id="logo"><img id="logoimage" src="" alt=""> 
+		  <h1 id="logotitle">Phenomanal</h1>
+		</div>
+		<!--/logo-->
+		<nav>
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Data</a></li>
+			<li><a href="work.html">Help</a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>
+		</nav>
+	</div>
+  <header>
+    <h1><span>Kitty</span> ipsum dolor sit amet, attack et orci turpis quis vehicula, pellentesque kittens stuck in a tree I don't like that food feed me hiss. </h1>
+    <h2>Fluffy fur et bat tortor in viverra</h2>
+  </header>
 <?php 
 //searches for specific diseases using index.html and POST to get the variable submitted
 	if (isset($_POST['searchQuery'])){ 
@@ -39,31 +75,42 @@ $result = $client->query($query);
 
 //The following code loops over the result set and prints out all 
 //results of the variable ?title.
-echo "<table>";
+?>
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Disease  name (ID)</th>
+            <th scope="col">Phenotype Link</th>
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+  <?php
 
 foreach($result as $line){
-  $value = $line['?dis'];
-  $value2 =$line['?name'];  
-	if (preg_match('/"([^"]+)"/', $value, $m)) {
-    $value = $m[0];   
-		$c=explode("/", $value);
-	$value=end($c);
-
+  $dis = $line['?dis'];
+  $name =$line['?name'];  
+	if (preg_match('/"([^"]+)"/', $dis, $m)) { //finds instances that match regex aka gets url
+    $dis = $m[0];   	//assign first instance to dis
+	$c=explode("/", $dis); //explode dis to get just end of url
+	$dis=end($c); 
+	$dis = str_replace('"', "", $dis); //remove quotations from string.
 } 
 
-	if (preg_match('/"([^"]+)"/', $value2, $n)) {
-	str_replace('"', "", $n[0]);
-	    $value2 = $n[0]; 
-
+	if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
 } 
-    if($value != ""){
-      //echo $value->toString()."..... ".$value2->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
-	 // echo $value2->toString()."<br>";
+    if($dis != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$value2 ($value)</td>";
-        echo "<td>Phenotypes</td>"; //edge pheno and inferred
+        echo "<td>$name ($dis)</td>";
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td><a href='ontologyterms.php?searchQuery=$value'>Phenotypes</a></td>"; //edge
+        echo "<td><a href='ontologyterms.php?searchQuery=$dis'>Phenotypes</a></td>"; //edge
         echo "</tr>";
 	  }
     else{
@@ -73,3 +120,7 @@ foreach($result as $line){
 }
 echo "</table>";
 //SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+
+
+</body></html>
