@@ -1,4 +1,4 @@
-<!DOCTYPE HTML>
+  <!DOCTYPE HTML>
 <html>
 <head>
 <title>Phenomanal</title>
@@ -34,12 +34,20 @@
     <h1><span>Kitty</span> ipsum dolor sit amet, attack et orci turpis quis vehicula, pellentesque kittens stuck in a tree I don't like that food feed me hiss. </h1>
     <h2>Fluffy fur et bat tortor in viverra</h2>
   </header>
-<?php 
+ 
+ <!--  /********************************** Body goes here**************************/  -->
+ 
+  <?php 
 //searches for specific diseases using index.html and POST to get the variable submitted
-	if (isset($_POST['searchQuery'])){ 
-    $searchQuery = $_POST['searchQuery'];
+	if (isset($_GET['searchQuery'])){ 
+    $searchQuery = $_GET['searchQuery'];
 
 }
+echo "var".$searchQuery."<br>";
+$searchQuery2="phe:";
+$searchQuery=$searchQuery2.$searchQuery;
+echo "var".$searchQuery."<br>";
+
 
 //this file loads specific things from biocrunch../sparql -- look at query below
 
@@ -51,17 +59,22 @@ include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
 $client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
 //Find the name of all diseases
 $querystring = "
+
+
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
-select *
-where {
-   ?dis phe:has_name ?name .
-	FILTER regex(?name, '$searchQuery', 'i')
-	FILTER(REGEX(STR(?dis), '^http://phenomebrowser.org/phenomenet'))
-	
-}
-LIMIT 200";
 
+select *
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'OMIM', 'i')
+}
+ORDER BY DESC(?value)
+";
 
 
 //the %s relates to the variable at the end of the line"
@@ -81,40 +94,57 @@ $result = $client->query($query);
   <table id="hor-minimalist-a" summary="Diseases">
  <thead>
     	<tr>
-        	<th scope="col">Disease  name (ID)</th>
-            <th scope="col">Phenotype Link</th>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
 			<!--            <th scope="col">Link</th> -->
 
           
         </tr>
     </thead>
     <tbody>
-  <?php
+   <?php
 
 foreach($result as $line){
-  $dis = $line['?dis'];
-  $name =$line['?name'];  
-	if (preg_match('/"([^"]+)"/', $dis, $m)) { //finds instances that match regex aka gets url
-    $dis = $m[0];   	//assign first instance to dis
-	$c=explode("/", $dis); //explode dis to get just end of url
-	$dis=end($c); 
-	$dis = str_replace('"', "", $dis); //remove quotations from string.
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
 } 
-
-	if (preg_match('/"([^"]+)"/', $name, $n)) {
+if (preg_match('/"([^"]+)"/', $name, $n)) {
 	$name = $n[0]; 
 	$name =str_replace('"', "", $name);
 } 
-    if($dis != ""){
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name ($dis)</td>";
-		echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>"; //edge
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td><a href='ontologyterms.php?searchQuery=$dis'>Phenotypes</a></td>"; //edge
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
         echo "</tr>";
 	  }
     else{
@@ -126,8 +156,8 @@ echo "</table>";
 //SPARQLEngine::writeQueryResultAsHtmlTable($result); 
 ?>
 
-
-<footer id="footer" class="clearfix">
+ 
+ <footer id="footer" class="clearfix">
   <div class="wrapper">
     
     <section class="right social clear">
