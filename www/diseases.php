@@ -110,11 +110,8 @@ foreach($result as $line){
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
         echo "<td>$name ($dis)</td>";
-<<<<<<< HEAD
 		echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>"; //edge
 
-=======
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
         echo "<td><a href='ontologyterms.php?searchQuery=$dis'>Phenotypes</a></td>"; //edge
@@ -130,7 +127,6 @@ echo "</table>";
 ?>
 
 
-<<<<<<< HEAD
 <footer id="footer" class="clearfix">
   <div class="wrapper">
     
@@ -147,6 +143,4 @@ echo "</table>";
   </div>
 </footer>
 
-=======
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
 </body></html>

@@ -41,15 +41,9 @@
 	    $searchQuery = $_GET['searchQuery'];
 }
 
-<<<<<<< HEAD
 /*echo $searchQuery;
 str_replace('"', "", $searchQuery);
 echo $searchQuery;*/
-=======
-echo $searchQuery;
-str_replace('"', "", $searchQuery);
-echo $searchQuery;
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
 
 //this file loads specific things from biocrunch../sparql -- look at query below
 
@@ -84,7 +78,6 @@ where   {  ?s <http://purl.org/dc/elements/1.1/%s> ?title . }', $searchQuery) ;
 
 //To execute the query, we create a new ClientQuery 
 //object and pass it to the SPARQL client:
-<<<<<<< HEAD
 
 $query = new ClientQuery();
 $query->query($querystring);
@@ -164,85 +157,6 @@ where {
 	?infpheno phe:has_name  ?name
     FILTER regex(?dis, '$searchQuery', 'i')
 }
-=======
-
-$query = new ClientQuery();
-$query->query($querystring);
-$result = $client->query($query);
-
-//The following code loops over the result set and prints out all 
-//results of the variable ?title.
-?>
-  <table id="hor-minimalist-a" summary="Phenotype table">
- <thead>
-    	<tr>
-        	<th scope="col">Phenotype ID</th>
-            <th scope="col">Name</th>
-          
-        </tr>
-    </thead>
-    <tbody>
-  <?php
-foreach($result as $line){
-  $pheno = $line['?pheno'];
-  $name =$line['?name'];  
-  
-  if (preg_match('/"([^"]+)"/', $pheno, $m)) { //finds instances that match regex aka gets url
-    $pheno = $m[0];   	//assign first instance to pheno
-	$c=explode("/", $pheno); //explode pheno to get just end of url
-	$pheno=end($c); 
-	$pheno = str_replace('"', "", $pheno); //remove quotations from string.
-} 
-
-	if (preg_match('/"([^"]+)"/', $name, $n)) {
-	$name = $n[0]; 
-	$name =str_replace('"', "", $name);
-} 
-  
-    if($name != ""){
-    //  echo $name->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
-		echo "<tr>";
-        echo "<td>$pheno</td>";
-        echo "<td>$name</td>";
-        echo "</tr>";
-	  }
-    else{
-      echo "undbound<br>";
-	  }
-	   
-}
-echo "</table>";
-//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
-?>
-<?php 
-//searches for specific diseases using index.html and POST to get the variable submitted
-	if (isset($_GET['searchQuery'])){ 
-	$_GET["searchQuery"];
-	    $searchQuery = $_GET['searchQuery'];
-}
-
-echo $searchQuery;
-
-
-//this file loads specific things from biocrunch../sparql -- look at query below
-
-//include rap
-define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
-include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
-
-//sparql client
-$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
-//Find the name of all diseases
-$querystring = "
-PREFIX phe: <http://phenomebrowser.org/phenomenet/>
-PREFIX obo: <http://obofoundry.org/obo>
-select ?infpheno ?name
-where { 
-	?dis phe:has_inferred_phenotype ?infpheno .
-	?infpheno phe:has_name  ?name
-    FILTER regex(?dis, '$searchQuery', 'i')
-}
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
 	GROUP BY ?infpheno
 	ORDER BY ASC(?infpheno)
 ";
@@ -266,11 +180,8 @@ $result = $client->query($query);
 //The following code loops over the result set and prints out all 
 //results of the variable ?title.
 ?>
-<<<<<<< HEAD
 <h3>Mammalian Phenotypes inferred for <?php echo $searchQuery ?></h3>
 
-=======
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
   <table id="hor-minimalist-a" summary="Inferred Phenotype table">
  <thead>
     	<tr>
@@ -301,11 +212,7 @@ foreach($result as $line){
     if($name != ""){
     //  echo $name->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 		echo "<tr>";
-<<<<<<< HEAD
         echo "<td><a href='https://www.ebi.ac.uk/ontology-lookup/?termId=$infpheno'>$infpheno</a></td>";
-=======
-        echo "<td>$infpheno</td>";
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
         echo "<td>$name</td>";
         echo "</tr>";
 	  }
@@ -318,7 +225,6 @@ echo "</table>";
 //SPARQLEngine::writeQueryResultAsHtmlTable($result); 
 ?>
 
-<<<<<<< HEAD
 <footer id="footer" class="clearfix">
   <div class="wrapper">
     
@@ -335,6 +241,4 @@ echo "</table>";
   </div>
 </footer>
 
-=======
->>>>>>> 7bcf2109c6c0bca44899ed4e166b761e3b34b61f
 </body></html>
