@@ -58,6 +58,8 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select ?pheno ?name
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
 where { 
 	?dis phe:has_phenotype ?pheno .
 	?pheno phe:has_name  ?name
@@ -152,6 +154,8 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select ?infpheno ?name
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
 where { 
 	?dis phe:has_inferred_phenotype ?infpheno .
 	?infpheno phe:has_name  ?name

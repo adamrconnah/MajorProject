@@ -54,12 +54,14 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where {
    ?dis phe:has_name ?name .
 	FILTER regex(?name, '$searchQuery', 'i')
 	FILTER(REGEX(STR(?dis), '^http://phenomebrowser.org/phenomenet'))
 	
 }
+
 LIMIT 200";
 
 

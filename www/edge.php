@@ -36,7 +36,19 @@
   </header>
  
  <!--  /********************************** Body goes here**************************/  -->
- 
+<a name="content"></a>
+ <ul>
+	<li><a href="#OMIM">for OMIM prefix OMIM_</a></li>
+	<li><a href="#MGI">for mouse prefix MGI</a></li>
+	<li><a href="#ORPHANET">for  ORPHANET prefix  ORPHANET_</a></li>
+	<li><a href="#RGD">for RAT RGD</a></li>
+	<li><a href="#FB">for fly FB</a></li>
+	<li><a href="#WB">for worm WB</a></li>
+	<li><a href="#S0">for yeast S0</a></li>
+	<li><a href="#ZD">for zebrafish ZD</a></li>
+	
+</ul>
+ <a name="OMIM"></a>  
   <?php 
 //searches for specific diseases using index.html and POST to get the variable submitted
 	if (isset($_GET['searchQuery'])){ 
@@ -65,6 +77,8 @@ PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 
 select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
@@ -74,15 +88,9 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER regex(?node, 'OMIM', 'i')
 }
 ORDER BY DESC(?value)
+Limit 20
 ";
 
-
-//the %s relates to the variable at the end of the line"
-//?s= <http://www.example.co.uk/genotype/disease#X>
-//?p= http://purl.org/dc/elements/1.1/title
-
-//To execute the query, we create a new ClientQuery 
-//object and pass it to the SPARQL client:
 
 $query = new ClientQuery();
 $query->query($querystring);
@@ -91,6 +99,7 @@ $result = $client->query($query);
 //The following code loops over the result set and prints out all 
 //results of the variable ?title.
 ?>
+<h3> OMIM </h3>
   <table id="hor-minimalist-a" summary="Diseases">
  <thead>
     	<tr>
@@ -155,8 +164,813 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 echo "</table>";
 //SPARQLEngine::writeQueryResultAsHtmlTable($result); 
 ?>
+<a href="#content">TOP</a>
 
- 
+ <a name="MGI"></a>  
+
+<?php
+
+//mgi
+
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'MGI', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<a href="#content">TOP</a>
+<h3> MGI </h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
+ <a name="ORPHANET"></a>  
+
+<?php
+//Orphanet
+
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'ORPHANET', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<h3> Orphanet </h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
+ <a name="RGD"></a>  
+
+<?php
+//rat RGD
+
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'RGD', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<h3> RGD </h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
+ <a name="FB"></a>  
+
+ <?php
+//FB fly
+
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'MGI', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<h3> FB </h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
+ <a name="WB"></a>  
+
+<?php
+//wb worm
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'WB', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<h3> worm WB </h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
+ <a name="S0"></a>  
+
+<?php
+//yeast S0
+
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'S0', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<h3> YEAST SO </h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
+<a name="ZD"></a> 
+<?php
+//ZD Zebrafish
+
+//include rap
+define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
+include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
+
+//sparql client
+$client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
+//Find the name of all diseases
+$querystring = "
+
+
+PREFIX phe: <http://phenomebrowser.org/phenomenet/>
+PREFIX obo: <http://obofoundry.org/obo>
+
+select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
+where { $searchQuery phe:has_edge ?edge .
+        ?edge phe:has_value ?value ;
+              phe:has_node ?node .
+		?node phe:has_name ?name
+			  
+		FILTER (?node != $searchQuery) 
+		FILTER regex(?node, 'ZD', 'i')
+}
+ORDER BY DESC(?value)
+";
+
+
+//the %s relates to the variable at the end of the line"
+//?s= <http://www.example.co.uk/genotype/disease#X>
+//?p= http://purl.org/dc/elements/1.1/title
+
+//To execute the query, we create a new ClientQuery 
+//object and pass it to the SPARQL client:
+
+$query = new ClientQuery();
+$query->query($querystring);
+$result = $client->query($query);
+
+//The following code loops over the result set and prints out all 
+//results of the variable ?title.
+?>
+<h3> Zebrafish ZD</h3>
+
+  <table id="hor-minimalist-a" summary="Diseases">
+ <thead>
+    	<tr>
+        	<th scope="col">Edge  name (ID)</th>
+            <th scope="col">Similarity Value</th>
+			<th scope="col">Node</th>
+			<th scope="col">Phenotypes</th>
+			<th scope="col"></th>
+
+			<!--            <th scope="col">Link</th> -->
+
+          
+        </tr>
+    </thead>
+    <tbody>
+   <?php
+
+foreach($result as $line){
+  $name = $line['?name'];
+  $value = $line['?value'];
+  $node =$line['?node'];  
+	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
+    $edge = $m[0];   	//assign first instance to dis
+	$c=explode("/", $edge); //explode dis to get just end of url
+	$edge=end($c); 
+	$edge = str_replace('"', "", $edge); //remove quotations from string.
+} */
+if (preg_match('/"([^"]+)"/', $node, $m)) { //finds instances that match regex aka gets url
+    $node = $m[0];   	//assign first instance to dis
+	$c=explode("/", $node); //explode dis to get just end of url
+	$node=end($c); 
+	$node = str_replace('"', "", $node); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $name, $n)) {
+	$name = $n[0]; 
+	$name =str_replace('"', "", $name);
+} 
+	if (preg_match('/"([^"]+)"/', $value, $n)) {
+	$value = $n[0]; 
+	$value =str_replace('"', "", $value);
+} 
+    if($name != ""){
+      //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+	 // echo $name->toString()."<br>";
+	echo "<tr>";
+        echo "<td>$name</td>";
+		echo "<td>$value</td>"; //edge
+
+       // echo "<td>Phenotypes</td>"; //edge pheno and inferred
+		//trim string 
+        echo "<td>$node</td>"; //edge
+		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
+		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
+
+        echo "</tr>";
+	  }
+    else{
+      echo "undbound<br>";
+	  }
+	   //   (".*?")   < finds everything in the quotes. 
+}
+echo "</table>";
+//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
+?>
+<a href="#content">TOP</a>
+
  <footer id="footer" class="clearfix">
   <div class="wrapper">
     
