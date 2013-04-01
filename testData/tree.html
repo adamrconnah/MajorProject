@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
+<script>
+
+	
+//this script loads first level of tree.
+ $(function() {
+        $('.myDiv').click(function() {
+            $.get('treescript.php', function(data) {
+                $('.myDiv').after("<br><br> " + data);
+				
+
+            });
+            return false;
+        });
+    });
+	
+	
+
+	
+</script>
+</head>
+<body>
+<ul><li><a id="MP0003631" class="pheno" href="#">nervous system phenotype</a></li><ul>
+<br><br>
+<a href="#" class="myDiv"  >LoadTree </a>
+
+<script>
+
+
+//this script loads branches dependent on id - has to be below first id ^
+$(".pheno").on("click",function(){
+var id = $(this).attr("id");
+
+$.ajax({
+	type: "POST",
+	url: "treescript.php",
+	data: { pheno: id}
+	}).done(function( msg ) {
+     $('#'+id).after("<br>"+msg+"");
+	 alert(id);
+	});
+
+ //just to see it works
+  	
+				
+              
+//$(this).slideUp();
+       
+ 
+ 
+});
+
+</script>
+<br>
+<br>
+
+
+</body>
+</html>
+<!--
+/*
+function loadphp()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","treescript.php",true);
+xmlhttp.send();
+}*/
