@@ -58,6 +58,8 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select ?pheno ?name
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
 where { 
 	?dis phe:has_phenotype ?pheno .
 	?pheno phe:has_name  ?name
@@ -118,7 +120,8 @@ foreach($result as $line){
     //  echo $name->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 		echo "<tr>";
 		$pheno = str_replace('_', ":", $pheno);
-        echo "<td><a href='https://www.ebi.ac.uk/ontology-lookup/?termId=/$pheno'>$pheno</a></td>";
+
+        echo "<td><a href='https://www.ebi.ac.uk/ontology-lookup/?termId=$pheno'>$pheno</a></td>";
         echo "<td>$name</td>";
         echo "</tr>";
 	  }
@@ -137,7 +140,6 @@ echo "</table>";
 	    $searchQuery = $_GET['searchQuery'];
 }
 
-echo $searchQuery;
 
 
 //this file loads specific things from biocrunch../sparql -- look at query below
@@ -153,6 +155,8 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select ?infpheno ?name
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
 where { 
 	?dis phe:has_inferred_phenotype ?infpheno .
 	?infpheno phe:has_name  ?name
@@ -213,6 +217,8 @@ foreach($result as $line){
     if($name != ""){
     //  echo $name->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 		echo "<tr>";
+		$infpheno = str_replace('_', ":", $infpheno);
+
         echo "<td><a href='https://www.ebi.ac.uk/ontology-lookup/?termId=$infpheno'>$infpheno</a></td>";
         echo "<td>$name</td>";
         echo "</tr>";

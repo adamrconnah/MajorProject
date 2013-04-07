@@ -1,17 +1,106 @@
-	<div id="treeDiv1"></div> 
-	
-	<script>
-	//instantiate the TreeView control: 
+<!DOCTYPE HTML>
+<html>
+<head>
+<title>Phenomanal</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
+<link rel="stylesheet" type="text/css" href="styles/layout.css">
+<script src="scripts/jquery-1.7.2.min.js"></script>
+<script src="scripts/jquery.carouFredSel-5.5.2.js"></script>
+<script src="scripts/jquery.easing.1.3.js"></script>
+<!--[if lt IE 9]>
+<script src="scripts/html5.js"></script>
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<![endif]-->
+</head>
+<script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
-	var tree = new YAHOO.widget.TreeView("treeDiv1"); 
+<script>
+
+	
+//this script loads first level of tree.
+ $(function() {
+        $('.myDiv').click(function() {
+            $.get('treescript.php', function(data) {
+                $('.myDiv').after("<br><br> " + data);
+				
+
+            });
+            return false;
+        });
+    });
+	
+	
+
+	//<ul><li><a id="MP0003631" class="pheno" href="#">nervous system phenotype</a></li><ul>
+
+</script>
+</head>
+<body>
+<br><br>
+<a href="#" class="myDiv"  >LoadTree </a>
+
+
+<script>
+
+
+//this script loads branches dependent on id - has to be below first id ^
+//$(".pheno").on("click", function(){
+$(document).on("click", ".pheno",function(){
+var id = $(this).attr("id");
+
+$.ajax({
+	type: "POST",
+	url: "treescript.php",
+	data: { pheno: id}
+	}).done(function( msg ) {
+     $('#'+id).after("<br>"+msg+"");
+	// alert(id);
+	});
 	 
-	//get a reference to the root node; all 
-	//top level nodes are children of the root node: 
-	var rootNode = tree.getRoot(); 
+});
+/*
+$("ul li ul li a").on("click", function(){
+var id = $(this).attr("id");
+
+$.ajax({
+	type: "POST",
+	url: "treescript.php",
+	data: { pheno: id}
+	}).done(function( msg ) {
+     $('#'+id).after("<br>"+msg+"");
+	 alert(id);
+	});
 	 
-	//begin adding children 
-	var tmpNode = new YAHOO.widget.TextNode("My nodelabel", tree.getRoot(), false); 
-	 
-	//the tree won't show up until you draw (render) it: 
-	tree.draw(); 
-	</script>
+});*/
+
+</script>
+<br>
+<br>
+
+
+</body>
+</html>
+<!--
+/*
+function loadphp()
+{
+var xmlhttp;
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.onreadystatechange=function()
+  {
+  if (xmlhttp.readyState==4 && xmlhttp.status==200)
+    {
+    document.getElementById("myDiv").innerHTML=xmlhttp.responseText;
+    }
+  }
+xmlhttp.open("GET","treescript.php",true);
+xmlhttp.send();
+}*/

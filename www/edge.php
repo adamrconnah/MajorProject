@@ -38,14 +38,15 @@
  <!--  /********************************** Body goes here**************************/  -->
 <a name="content"></a>
  <ul>
-	<li><a href="#OMIM">for OMIM prefix OMIM_</a></li>
-	<li><a href="#MGI">for mouse prefix MGI</a></li>
-	<li><a href="#ORPHANET">for  ORPHANET prefix  ORPHANET_</a></li>
-	<li><a href="#RGD">for RAT RGD</a></li>
-	<li><a href="#FB">for fly FB</a></li>
-	<li><a href="#WB">for worm WB</a></li>
-	<li><a href="#S0">for yeast S0</a></li>
-	<li><a href="#ZD">for zebrafish ZD</a></li>
+	<li><a href="#OMIM">For OMIM prefix OMIM_</a></li>
+	<li><a href="#MGI">For mouse prefix MGI</a></li>
+	<li><a href="#ORPHANET">For  ORPHANET prefix  ORPHANET_</a></li>
+	<li><a href="#RGD">For RAT RGD</a></li>
+	<li><a href="#FB">For fly FB</a></li>
+	<li><a href="#WB">For worm WB</a></li>
+	<li><a href="#S0">For yeast S0</a></li>
+	<li><a href="#ZD">For zebrafish ZD</a></li>
+	<li><a href="#ZD">For slime mold DBS</a></li>
 	
 </ul>
  <a name="OMIM"></a>  
@@ -55,10 +56,10 @@
     $searchQuery = $_GET['searchQuery'];
 
 }
-echo "var".$searchQuery."<br>";
+
 $searchQuery2="phe:";
 $searchQuery=$searchQuery2.$searchQuery;
-echo "var".$searchQuery."<br>";
+
 
 
 //this file loads specific things from biocrunch../sparql -- look at query below
@@ -105,8 +106,9 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
+			<th scope="col">Explore</th>
+
 			<th scope="col"></th>
 
 			<!--            <th scope="col">Link</th> -->
@@ -119,6 +121,7 @@ $result = $client->query($query);
 
 foreach($result as $line){
   $name = $line['?name'];
+
   $value = $line['?value'];
   $node =$line['?node'];  
 	/*if (preg_match('/"([^"]+)"/', $edge, $m)) { //finds instances that match regex aka gets url
@@ -141,16 +144,21 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 	$value = $n[0]; 
 	$value =str_replace('"', "", $value);
 } 
+	if (preg_match('/"([^"]+)"/', $node, $n)) {
+	$node = $n[0]; 
+	$node =str_replace('"', "", $node);
+}
+	$dis2 =str_replace('OMIM_', "", $node);
+	
     if($name != ""){
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+        echo "<td>$name (<a href='http://omim.org/entry/$dis2'>$node</a>)</td>";
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -222,9 +230,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -258,16 +265,22 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 	$value = $n[0]; 
 	$value =str_replace('"', "", $value);
 } 
+	if (preg_match('/"([^"]+)"/', $node, $n)) {
+	$node = $n[0]; 
+	$node =str_replace('"', "", $node);
+}
+	//$dis2 =str_replace('OMIM_', "", $node);
+	
     if($name != ""){
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+		echo "<td>$name (<a href='http://www.informatics.jax.org/searchtool/Search.do?query=$node'>$node</a>)</td>";
+
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -337,9 +350,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -373,16 +385,21 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 	$value = $n[0]; 
 	$value =str_replace('"', "", $value);
 } 
+if (preg_match('/"([^"]+)"/', $node, $n)) {
+	$node = $n[0]; 
+	$node =str_replace('"', "", $node);
+}
+	$node2 =str_replace('ORPHANET_', "", $node);
     if($name != ""){
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+		echo "<td>$name (<a href='http://www.orpha.net/consor/cgi-bin/Disease_Search_Simple.php?lng=EN&Disease_Disease_Search_diseaseType=ORPHA&Disease_Disease_Search_diseaseGroup=$node2'>$node</a>)</td>";
+
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -452,9 +469,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -493,11 +509,12 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
         echo "<td>$name</td>";
+		echo "<td>$name (<a href='http://www.orpha.net/consor/cgi-bin/Disease_Search_Simple.php?lng=EN&Disease_Disease_Search_diseaseType=ORPHA&Disease_Disease_Search_diseaseGroup=$node2'>$node</a>)</td>";
+
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -540,7 +557,7 @@ where { $searchQuery phe:has_edge ?edge .
 		?node phe:has_name ?name
 			  
 		FILTER (?node != $searchQuery) 
-		FILTER regex(?node, 'MGI', 'i')
+		FILTER regex(?node, 'FB', 'i')
 }
 ORDER BY DESC(?value)
 ";
@@ -567,9 +584,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -603,16 +619,21 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 	$value = $n[0]; 
 	$value =str_replace('"', "", $value);
 } 
+if (preg_match('/"([^"]+)"/', $node, $n)) {
+	$node = $n[0]; 
+	$node =str_replace('"', "", $node);
+}
+	$node2 =str_replace('ORPHANET_', "", $node);
     if($name != ""){
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+		echo "<td>$name (<a href='http://flybase.org/reports/$node'>$node</a>)</td>";
+		
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -681,9 +702,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -721,12 +741,13 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+        
+		echo "<td>$name (<a href='http://www.wormbase.org/search/all/$node'>$node</a>)</td>";
+
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -796,9 +817,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -836,12 +856,11 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+		echo "<td>$name (<a href='http://www.wormbase.org/search/all/$node'>$node</a>)</td>";
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 
@@ -910,9 +929,8 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Edge  name (ID)</th>
             <th scope="col">Similarity Value</th>
-			<th scope="col">Node</th>
 			<th scope="col">Phenotypes</th>
-			<th scope="col"></th>
+			<th scope="col">Explore</th>
 
 			<!--            <th scope="col">Link</th> -->
 
@@ -950,12 +968,11 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name</td>";
+		echo "<td>$name (<a href='http://zfin.org/action/quicksearch/query?query=$node'>$node</a>)</td>";
 		echo "<td>$value</td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
 		//trim string 
-        echo "<td>$node</td>"; //edge
 		echo "<td><a href='ontologyterms.php?searchQuery=$node'>Phenotypes</a></td>"; //edge
 		echo "<td><a href='edge.php?searchQuery=$node'>Explore</a></td>"; //edge
 

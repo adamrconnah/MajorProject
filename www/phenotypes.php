@@ -41,7 +41,6 @@
 
 }
 
-//this file loads specific things from biocrunch../sparql -- look at query below
 
 //include rap
 define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
@@ -54,11 +53,13 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select *
-FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
+
 where {
-   ?dis phe:has_name ?name .
-	FILTER regex(?name, '$searchQuery', 'i')
-	FILTER(REGEX(STR(?dis), '^http://phenomebrowser.org/phenomenet'))
+   ?dis phe:has_phenotype ?pheno .
+      ?dis phe:has_name ?name .
+
+    FILTER regex(?pheno, '$searchQuery', 'i')
+
 	
 }
 
@@ -85,7 +86,9 @@ $result = $client->query($query);
     	<tr>
         	<th scope="col">Disease  name (ID)</th>
             <th scope="col">Explore</th>
-            <th scope="col">Phenotype Link</th>
+			<th scope="col">Phenotype Link</th>
+
+			
 			<!--            <th scope="col">Link</th> -->
 
           
@@ -95,26 +98,32 @@ $result = $client->query($query);
   <?php
 
 foreach($result as $line){
-  $dis = $line['?dis'];
-  $name =$line['?name'];  
-	if (preg_match('/"([^"]+)"/', $dis, $m)) { //finds instances that match regex aka gets url
+  $name = $line['?name'];
+    $dis = $line['?dis'];
+  $pheno =$line['?pheno'];  
+  
+	if (preg_match('/"([^"]+)"/', $name, $m)) { //finds instances that match regex aka gets url
+    $name = $m[0];   	//assign first instance to dis
+	$c=explode("/", $name); //explode name to get just end of url
+	$name=end($c); 
+	$name = str_replace('"', "", $name); //remove quotations from string.
+} 
+if (preg_match('/"([^"]+)"/', $dis, $m)) { //finds instances that match regex aka gets url
     $dis = $m[0];   	//assign first instance to dis
-	$c=explode("/", $dis); //explode dis to get just end of url
+	$c=explode("/", $dis); //explode name to get just end of url
 	$dis=end($c); 
 	$dis = str_replace('"', "", $dis); //remove quotations from string.
 } 
 
-	if (preg_match('/"([^"]+)"/', $name, $n)) {
-	$name = $n[0]; 
-	$name =str_replace('"', "", $name);
+	if (preg_match('/"([^"]+)"/', $pheno, $n)) {
+	$pheno = $n[0]; 
+	$pheno =str_replace('"', "", $pheno);
 } 
-	$dis2 =str_replace('OMIM_', "", $dis);
-
     if($dis != ""){
       //echo $dis->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 	 // echo $name->toString()."<br>";
 	echo "<tr>";
-        echo "<td>$name (<a href='http://omim.org/entry/$dis2'>$dis</a>)</td>";
+        echo "<td>$name</td>";
 		echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>"; //edge
 
        // echo "<td>Phenotypes</td>"; //edge pheno and inferred
