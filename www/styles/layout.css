@@ -129,6 +129,26 @@ header p {
 	width:100%;
 	margin-top:2%;
 }
+
+/*------------------------- Tree View-----------------*/
+ ul.tree, ul.tree ul {
+ list-style-type: none;
+ background: url(vline.png) repeat-y;
+ margin: 0;
+ padding: 0;
+ }
+ ul.tree ul {
+ margin-left: 10px;
+ } 
+ ul.tree li {
+margin: 0;
+ padding: 0 12px;
+ line-height: 20px;
+ background: url(node.png) no-repeat;
+ color: #369;
+ font-weight: bold;
+ }
+ 
 /* - - - - - - - - - - - - - - -  Slider START  - - - - - - - - - - - - - - - */
 
 .html_carousel {
@@ -582,7 +602,7 @@ text-indent:0
 	font-size: 12px;
 	background: #fff;
 	margin: 45px;
-	width: 850px;
+	width: 80%;
 	border-collapse: collapse;
 	text-align: left;
 }

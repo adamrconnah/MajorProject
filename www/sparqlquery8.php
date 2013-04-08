@@ -19,9 +19,9 @@ PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select *
 where { 
-   ?dis phe:has_phenotype ?pheno .
-  ?pheno phe:has_name  ?name
-         FILTER (?name = '$searchQuery3')
+	?dis phe:has_phenotype ?pheno .
+	?pheno phe:has_name  ?name
+    FILTER (?name = '$searchQuery3')
 }
 LIMIT 20";
 

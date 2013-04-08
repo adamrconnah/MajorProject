@@ -12,7 +12,40 @@
 <script src="scripts/html5.js"></script>
 <script src="scripts/css3-mediaqueries.min.js"></script>
 <![endif]-->
+
+<!--[if lt IE 9]>
+<script src="scripts/html5.js"></script>
+<script src="scripts/css3-mediaqueries.min.js"></script>
+<![endif]-->
 </head>
+<body>
+<div class="wrapper">
+	<div id="top" class="clearfix">
+		<!-- add in logo -->
+		<div id="logo"><img id="logoimage" src="" alt=""> 
+		  <h1 id="logotitle">Phenomanal</h1>
+		</div>
+		<!--/logo-->
+		<nav>
+		  <ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="#">Data</a></li>
+			<li><a href="tree.html">Tree</a></li>
+			<li><a href="work.html">Help</a></li>
+			<li><a href="#">Contact</a></li>
+		  </ul>
+		</nav>
+	</div>
+  <header>
+    <h1><span>Kitty</span> ipsum dolor sit amet, attack et orci turpis quis vehicula, pellentesque kittens stuck in a tree I don't like that food feed me hiss. </h1>
+    <h2>Fluffy fur et bat tortor in viverra</h2>
+  </header>
+<aside id="about" class="search">
+    
+
+<p>This is the home page for this server.</p>
+<p>The creation of this page, and others behind this, are under construction. contact aoc9@aber.ac.uk for any details</p>
+<h4>Click headings to expand treee</h4>
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 <script>
@@ -38,26 +71,37 @@
 </head>
 <body>
 <br><br>
-<a href="#" class="myDiv"  >LoadTree </a>
+<a href="#!" class="myDiv"  >Reset Tree </a>
 
 
 <script>
-
-
+ids = new Array();
 //this script loads branches dependent on id - has to be below first id ^
 //$(".pheno").on("click", function(){
-$(document).on("click", ".pheno",function(){
-var id = $(this).attr("id");
 
-$.ajax({
-	type: "POST",
-	url: "treescript.php",
-	data: { pheno: id}
-	}).done(function( msg ) {
-     $('#'+id).after("<br>"+msg+"");
-	// alert(id);
-	});
-	 
+$(document).on("click", ".pheno" ,function(){
+var id = $(this).attr("id");
+if(jQuery.inArray(id,ids) == -1){	
+			ids.push(id);	
+			$.ajax({
+			type: "POST",
+			url: "treescript.php",
+			data: { pheno: id}
+			}).done(function( msg ) {
+			$('#'+id).after(""+msg+"");
+
+				// alert(id);
+				});
+			}
+			else {
+			$("."+id).empty();
+			ids.splice(id);	
+
+			//could do.  if val is in array. remove all html below?
+        }
+//$(document).off("click", ".pheno"+id ,function(){
+
+
 });
 /*
 $("ul li ul li a").on("click", function(){

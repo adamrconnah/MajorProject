@@ -36,8 +36,9 @@
   </header>
 <?php 
 //searches for specific diseases using index.html and POST to get the variable submitted
-	if (isset($_POST['searchQuery'])){ 
-    $searchQuery = $_POST['searchQuery'];
+	if (isset($_GET['searchQuery'])){ 
+    $searchQuery = $_GET['searchQuery'];
+	$searchQuery = str_replace('MP', "MP_", $searchQuery); //remove quotations from string.
 
 }
 
@@ -53,6 +54,7 @@ $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
 select *
+FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
 where {
    ?dis phe:has_phenotype ?pheno .
@@ -63,7 +65,7 @@ where {
 	
 }
 
-LIMIT 200";
+LIMIT 500";
 
 
 

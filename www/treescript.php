@@ -17,7 +17,9 @@ else $id="MP0000001";
 			$obo = file_get_contents('mammalian_phenotype.obo', true);
 			// split each MP by  [Term]
 			$terms2 = explode('[Term]', $obo);
-			echo " <ul class=\"tree\">";
+			echo " <ul class=tree>";
+			echo " <div class=$id>";
+			
 
 			foreach ($terms2 as $term2){
 			$termRow2 = explode("\n", $term2);					
@@ -39,7 +41,7 @@ else $id="MP0000001";
 						$var1=$termRow2[1];
 						
 						//echo "<li><a href=\"#\" id=\"id\" onclick=\"loadphp2($var1)\" >".$termRow2[2]."</a></li><span id=".$var1."></span>"; //edge
-						echo "<li><a class=\"pheno\" id='$termRow2[1]' href=\"#\">".$termRow2[2]."</a><a href='phenotypes.php?searchQuery=$termRow2[1]'>[Search]</a></li>";
+						echo "<li><div class=\"pheno\" id='$termRow2[1]'><a href=\"#!\">".$termRow2[2]."</a><a href='phenotypes.php?searchQuery=$termRow2[1]'>[Search]</a></div></li>";
 
 
 
@@ -52,6 +54,7 @@ else $id="MP0000001";
 						
 				}
 					
+								echo "</div>";
 								echo "</ul>";
 								?>
 
