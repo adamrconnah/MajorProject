@@ -5,9 +5,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
-<script src="scripts/jquery-1.7.2.min.js"></script>
-<script src="scripts/jquery.carouFredSel-5.5.2.js"></script>
-<script src="scripts/jquery.easing.1.3.js"></script>
+
 <!--[if lt IE 9]>
 <script src="scripts/html5.js"></script>
 <script src="scripts/css3-mediaqueries.min.js"></script>
@@ -235,9 +233,10 @@ echo "</table>";
 <footer id="footer" class="clearfix">
   <div class="wrapper">
     
+
     <section class="right social clear">
       <!-- Replace with any 32px x 32px icons -->
-      <a href="https://plus.google.com/u/0/111044644508972712357/posts"><img class="icon" src="images/icons/google.png" alt=""></a> <a href="https://www.youtube.com/user/dudders666"><img class="icon" src="images/icons/youtube.png" alt=""></a> <a href="http://www.facebook.com/adamrconnah"><img class="icon" src="images/icons/facebook.png" alt=""></a> <a href="htpp://www.twitter.com/adamrconnah"><img class="icon" src="images/icons/twitter.png" alt=""></a>
+      <a href="https://plus.google.com/u/0/111044644508972712357/posts"><img class="icon" src="images/icons/google.png" alt=""></a> <a href="https://www.youtube.com/user/dudders666"><img class="icon" src="images/icons/youtube.png" alt=""></a> <a href="http://www.facebook.com/adamrconnah"><img class="icon" src="images/icons/facebook.png" alt=""></a> <a href="http://www.twitter.com/adamrconnah"><img class="icon" src="images/icons/twitter.png" alt=""></a>
       <!-- /icons -->
     </section>
     <!-- /section -->
