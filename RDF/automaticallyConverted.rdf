@@ -33,5 +33,5 @@ xmlns:phenomenet="http://phenomebrowser.org/phenomenet/">
 	</phenomenet:Edge>
 	<phenomenet:Ont rdf:about="http://obofoundry.org/obo/MP_0000001">
 		<phenomenet:has_name>mammalian phenotype</phenomenet:has_name>
-</phenomenet:Ont>
+	</phenomenet:Ont>
 </rdf:RDF>
