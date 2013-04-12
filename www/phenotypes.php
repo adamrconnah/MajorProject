@@ -57,15 +57,15 @@ select *
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
 where {
-   ?dis phe:has_phenotype ?pheno .
+   ?dis phe:has_phenotype $searchQuery .
       ?dis phe:has_name ?name .
 
-    FILTER regex(?pheno, '$searchQuery', 'i')
 
 	
 }
 
 LIMIT 500";
+    //FILTER regex(?pheno, '$searchQuery', 'i')
 
 
 

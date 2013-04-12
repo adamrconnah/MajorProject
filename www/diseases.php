@@ -56,14 +56,16 @@ PREFIX obo: <http://obofoundry.org/obo>
 select *
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where {
-   ?dis phe:has_name ?name .
-	FILTER regex(?name, '$searchQuery', 'i')
+
+   ?dis phe:has_name $searchQuery .
+
 	FILTER(REGEX(STR(?dis), '^http://phenomebrowser.org/phenomenet'))
 	
 }
 
 LIMIT 200";
 
+//	FILTER regex(?name, '$searchQuery', 'i')
 
 
 //the %s relates to the variable at the end of the line"

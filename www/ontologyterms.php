@@ -55,27 +55,18 @@ $client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sp
 $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
-select ?pheno ?name
+select *
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
 where { 
-	?dis phe:has_phenotype ?pheno .
+	$searchQuery phe:has_phenotype ?pheno .
 	?pheno phe:has_name  ?name
-    FILTER regex(?dis, '$searchQuery', 'i')
+   
 }
-	GROUP BY ?pheno
-	ORDER BY ASC(?pheno)
+	
 ";
-
-/* ?pheno phe:has_name \"%s>\" .'   ,$searchQuery3
-PREFIX dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=elements#title>
-SELECT *
-where   {  ?s <http://purl.org/dc/elements/1.1/%s> ?title . }', $searchQuery) ; 
-*/
-//the %s relates to the variable at the end of the line"
-//?s= <http://www.example.co.uk/genotype/disease#X>
-//?p= http://purl.org/dc/elements/1.1/title
-
+//GROUP BY ?pheno
+	//ORDER BY ASC(?pheno)
 //To execute the query, we create a new ClientQuery 
 //object and pass it to the SPARQL client:
 
@@ -129,7 +120,6 @@ foreach($result as $line){
 	   
 }
 echo "</table>";
-//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
 ?>
 <?php 
 //searches for specific diseases using index.html and POST to get the variable submitted
@@ -152,26 +142,18 @@ $client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sp
 $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
-select ?infpheno ?name
+select *
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
 where { 
-	?dis phe:has_inferred_phenotype ?infpheno .
+	$searchQuery phe:has_inferred_phenotype ?infpheno .
 	?infpheno phe:has_name  ?name
-    FILTER regex(?dis, '$searchQuery', 'i')
 }
-	GROUP BY ?infpheno
-	ORDER BY ASC(?infpheno)
+	
 ";
-
-/* ?pheno phe:has_name \"%s>\" .'   ,$searchQuery3
-PREFIX dc: <http://dublincore.org/documents/2012/06/14/dcmi-terms/?v=elements#title>
-SELECT *
-where   {  ?s <http://purl.org/dc/elements/1.1/%s> ?title . }', $searchQuery) ; 
-*/
-//the %s relates to the variable at the end of the line"
-//?s= <http://www.example.co.uk/genotype/disease#X>
-//?p= http://purl.org/dc/elements/1.1/title
+//    FILTER regex(?dis, '$searchQuery', 'i')
+//GROUP BY ?infpheno
+	//ORDER BY ASC(?infpheno)
 
 //To execute the query, we create a new ClientQuery 
 //object and pass it to the SPARQL client:

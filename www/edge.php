@@ -78,13 +78,14 @@ PREFIX obo: <http://obofoundry.org/obo>
 select *
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
-where { $searchQuery phe:has_edge ?edge .
+where { 
+$searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
 		?node phe:has_name ?name .
 			 
 		FILTER(?value > '0.2') .
-		FILTER (?node != $searchQuery)  .
+		
 		FILTER regex(?node, 'OMIM', 'i')
 }
 ORDER BY DESC(?value)
