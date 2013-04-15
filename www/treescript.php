@@ -29,7 +29,7 @@ else $id="MP0000001";
 						$n = explode("!", $m[0]); 									//explode matching row using the "!" seperator
 						$is_a = $n[0];
 						$is_a = str_replace('is_a: ', "", $is_a); 					//strip unneccesery stuff from string to leave mp:00012 etc
-						$is_a = str_replace(':', "", $is_a); 					//strip unneccesery stuff from string to leave mp:00012 etc
+						$is_a = str_replace(':', "", $is_a); 						//strip unneccesery stuff from string to leave mp:00012 etc
 
 						$is_a = trim ($is_a);
 						
@@ -40,13 +40,8 @@ else $id="MP0000001";
 						$termRow2[2] = str_replace('name: ', "", $termRow2[2]); 
 						$var1=$termRow2[1];
 						
-						//echo "<li><a href=\"#\" id=\"id\" onclick=\"loadphp2($var1)\" >".$termRow2[2]."</a></li><span id=".$var1."></span>"; //edge
-						echo "<li><div class=\"pheno\" id='$termRow2[1]'><a href=\"#!\">".$termRow2[2]."</a><a href='phenotypes.php?searchQuery=$termRow2[1]'>[Search]</a></div></li>";
-
-
-
-	
-							//href='treescript.php?pheno=$termRow2[1]'
+						echo "<li><div class=\"pheno\" id='$termRow2[1]'><a href=\"#!\">".$termRow2[2]."</a><span><a href='phenotypes.php?searchQuery=$termRow2[1]'>   <img src=\"mag.png\" ></a></span></div></li>";
+																											
 						}
 						}
 						
@@ -56,14 +51,5 @@ else $id="MP0000001";
 					
 								echo "</div>";
 								echo "</ul>";
-								?>
-
-<?php
-//on click - load children while keeping current html.
-//dynamic - ajax
-//execute php script dynamically
-		
 	
-//serve all top levels to user.
-//serve children dependent on click.
-//json
+								?>

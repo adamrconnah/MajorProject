@@ -5,19 +5,14 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
-
 <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
 
 <!--[if lt IE 9]>
 <script src="scripts/html5.js"></script>
 <script src="scripts/css3-mediaqueries.min.js"></script>
 <![endif]-->
-
-<!--[if lt IE 9]>
-<script src="scripts/html5.js"></script>
-<script src="scripts/css3-mediaqueries.min.js"></script>
-<![endif]-->
 </head>
+
 <body>
 <div class="wrapper">
 	<div id="top" class="clearfix">
@@ -27,23 +22,24 @@
 		</div>
 		<!--/logo-->
 		<nav>
-		  <ul>
+		   <ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Data</a></li>
+			<li><a href="data.html">Data</a></li>
 			<li><a href="tree.html">Tree</a></li>
 			<li><a href="work.html">Help</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		  </ul>
 		</nav>
 	</div>
   <header>
-    <h1><span>Kitty</span> ipsum dolor sit amet, attack et orci turpis quis vehicula, pellentesque kittens stuck in a tree I don't like that food feed me hiss. </h1>
-    <h2>Fluffy fur et bat tortor in viverra</h2>
+  	<!-- Description-->
+    <h1><span>Phenomeanal</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
+
+The application can be used to find diseases which are related using their phenotypic similarity value.
+  </h1>
+    <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
 <aside id="about" class="search">
-    
-
-<p>The creation of this page, and others behind this, are under construction. contact aoc9@aber.ac.uk for any details</p>
 <h4>Click the links to expand tree, and click search to search for related diseases</h4>
 
 <script>
@@ -51,7 +47,7 @@
 	
 //this script loads first level of tree.
  $(function() {
-        $('.myDiv').click(function() {
+        $(document).ready(function() {
             $.get('treescript.php', function(data) {
                 $('.myDiv').after("<br><br> " + data);
 				
@@ -60,7 +56,7 @@
             return false;
         });
     });
-	
+
 	
 </script>
 </head>
@@ -68,15 +64,14 @@
 <br><br>
 <a href="#!" class="myDiv"  >Reset Tree </a>
 
-
 <script>
 ids = new Array();
 //this script loads branches dependent on id - has to be below first id ^
 
 $(document).on("click", ".pheno" ,function(){
 var id = $(this).attr("id");
-if(jQuery.inArray(id,ids) == -1){	
-			ids.push(id);	
+if(jQuery.inArray(id,ids) == -1){	//checks if id is in array,
+			ids.push(id);	 // adds id to array
 			$.ajax({
 			type: "POST",
 			url: "treescript.php",
@@ -84,24 +79,18 @@ if(jQuery.inArray(id,ids) == -1){
 			}).done(function( msg ) {
 			$('#'+id).after(""+msg+"");
 
-				// alert(id);
 				});
 			}
 			else {
 			$("."+id).empty();
-			ids.splice(id);	
+			ids.splice(id);	//remvoes id from array
 
-			//could do.  if val is in array. remove all html below?
         }
 
 
 });
 
 </script>
-<br>
-<br>
-
-
 </body>
 </html>
 

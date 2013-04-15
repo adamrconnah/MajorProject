@@ -5,14 +5,13 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
-<script src="scripts/jquery-1.7.2.min.js"></script>
-<script src="scripts/jquery.carouFredSel-5.5.2.js"></script>
-<script src="scripts/jquery.easing.1.3.js"></script>
+
 <!--[if lt IE 9]>
 <script src="scripts/html5.js"></script>
 <script src="scripts/css3-mediaqueries.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
 <div class="wrapper">
 	<div id="top" class="clearfix">
@@ -20,61 +19,52 @@
 		<div id="logo"><img id="logoimage" src="" alt=""> 
 		  <h1 id="logotitle">Phenomanal</h1>
 		</div>
-		<!--/logo-->
+		<!--Menu-->
 		<nav>
-		  <ul>
+		   <ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Data</a></li>
+			<li><a href="data.html">Data</a></li>
 			<li><a href="tree.html">Tree</a></li>
 			<li><a href="work.html">Help</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		  </ul>
 		</nav>
 	</div>
-  <header>
-    <h1><span>Kitty</span> ipsum dolor sit amet, attack et orci turpis quis vehicula, pellentesque kittens stuck in a tree I don't like that food feed me hiss. </h1>
-    <h2>Fluffy fur et bat tortor in viverra</h2>
+ 	 <header>
+  	<!-- Description-->
+    <h1><span>Phenomeanal</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
+
+The application can be used to find diseases which are related using their phenotypic similarity value.
+  </h1>
+    <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
 <aside id="about" class="search">
-    
+ <script>
+function validateForm()
+{
+var x=document.forms["login"]["searchQuery"].value;
+if (x==null || x=="")
+  {
+  alert("Input keyword");
+  return false;
+  }
+}</script>
 
 <p>This is the home page for this server.</p>
-<p>The creation of this page, and others behind this, are under construction. contact aoc9@aber.ac.uk for any details</p>
 <h4>Search disease name e.g Alzheimer</h4>
-<form name="login" action="diseases.php"  onsubmit="" method="post" >
-<input type="text" name="searchQuery" />
+<!-- Form -->
+<form name="login" action="diseases.php"  onsubmit="return validateForm()" method="post" >
+<input type="text" name="searchQuery" placeholder="e.g Alzheimer"> 
 
 <input type="submit" value="Search">
 </form>
-<!--
-<h4>Search via prefix e.g title/identifier!</h4>
-	<div class="formstyle">
-	<form name="login" action="testsparql7.php"  onsubmit="" method="post" >
-	<input type="text" name="searchQuery2" />
 
-	<input type="submit" value="Search">
-	</form>
-	</div class>
-	
-<h4>search ontology names</h4>
-	<div class="formstyle">
-	<form name="login" action="ontologyterms.php"  onsubmit="" method="post" >
-	<input type="text" name="searchQuery3" />
-
-	<input type="submit" value="Search">
-	</form>
-	</div class>
-	
-
-<div id="htmltagcloud"> <span id="0" class="wrd tagcloud7"><a href="#tagcloud">keyboard</a></span> <span id="1" class="wrd tagcloud0"><a href="#tagcloud">knock</a></span> <span id="2" class="wrd tagcloud0"><a href="#tagcloud">lamp</a></span> <span id="3" class="wrd tagcloud0"><a href="#tagcloud">lick</a></span> <span id="4" class="wrd tagcloud0"><a href="#tagcloud">mauris</a></span> <span id="5" class="wrd tagcloud10"><a href="#tagcloud">meow</a></span> <span id="6" class="wrd tagcloud0"><a href="#tagcloud">nec</a></span> <span id="7" class="wrd tagcloud0"><a href="#tagcloud">non</a></span> <span id="8" class="wrd tagcloud5"><a href="#tagcloud">nullam</a></span> <span id="9" class="wrd tagcloud0"><a href="#tagcloud">nunc</a></span> <span id="10" class="wrd tagcloud0"><a href="#tagcloud">pellentesque</a></span> <span id="11" class="wrd tagcloud0"><a href="#tagcloud">pharetra</a></span> <span id="12" class="wrd tagcloud0"><a href="#tagcloud">purr</a></span> <span id="13" class="wrd tagcloud0"><a href="#tagcloud">quis</a></span> <span id="14" class="wrd tagcloud0"><a href="#tagcloud">sagittis</a></span> <span id="15" class="wrd tagcloud0"><a href="#tagcloud">sit</a></span> <span id="16" class="wrd tagcloud7"><a href="#tagcloud">sleep</a></span> <span id="17" class="wrd tagcloud0"><a href="#tagcloud">sniff</a></span> <span id="18" class="wrd tagcloud0"><a href="#tagcloud">stuck</a></span> <span id="19" class="wrd tagcloud0"><a href="#tagcloud">sunbathe</a></span> </div><div id="credit">created at <a href="http://tagcrowd.com">TagCrowd.com</a></div>
--->
 </aside>
 <footer id="footer" class="clearfix">
-  <div class="wrapper">
-    
+<div class="wrapper">    
     <section class="right social clear">
       <!-- Replace with any 32px x 32px icons -->
-      <a href="https://plus.google.com/u/0/111044644508972712357/posts"><img class="icon" src="images/icons/google.png" alt=""></a> <a href="https://www.youtube.com/user/dudders666"><img class="icon" src="images/icons/youtube.png" alt=""></a> <a href="http://www.facebook.com/adamrconnah"><img class="icon" src="images/icons/facebook.png" alt=""></a> <a href="htpp://www.twitter.com/adamrconnah"><img class="icon" src="images/icons/twitter.png" alt=""></a>
+      <a href="https://plus.google.com/u/0/111044644508972712357/posts"><img class="icon" src="images/icons/google.png" alt=""></a> <a href="https://www.youtube.com/user/dudders666"><img class="icon" src="images/icons/youtube.png" alt=""></a> <a href="http://www.facebook.com/adamrconnah"><img class="icon" src="images/icons/facebook.png" alt=""></a> <a href="http://www.twitter.com/adamrconnah"><img class="icon" src="images/icons/twitter.png" alt=""></a>
       <!-- /icons -->
     </section>
     <!-- /section -->

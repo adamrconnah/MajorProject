@@ -11,6 +11,7 @@
 <script src="scripts/css3-mediaqueries.min.js"></script>
 <![endif]-->
 </head>
+
 <body>
 <div class="wrapper">
 	<div id="top" class="clearfix">
@@ -18,55 +19,79 @@
 		<div id="logo"><img id="logoimage" src="" alt=""> 
 		  <h1 id="logotitle">Phenomanal</h1>
 		</div>
-		<!--/logo-->
+		<!--Menu-->
 		<nav>
-		  <ul>
+		   <ul>
 			<li><a href="index.html">Home</a></li>
-			<li><a href="#">Data</a></li>
+			<li><a href="data.html">Data</a></li>
+			<li><a href="tree.html">Tree</a></li>
 			<li><a href="work.html">Help</a></li>
-			<li><a href="#">Contact</a></li>
+			<li><a href="contact.html">Contact</a></li>
 		  </ul>
 		</nav>
 	</div>
-  <header>
-    <h1><span>Kitty</span> ipsum dolor sit amet, attack et orci turpis quis vehicula, pellentesque kittens stuck in a tree I don't like that food feed me hiss. </h1>
-    <h2>Fluffy fur et bat tortor in viverra</h2>
+ 	 <header>
+  	<!-- Description-->
+    <h1><span>Phenomeanal</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
+
+The application can be used to find diseases which are related using their phenotypic similarity value.
+  </h1>
+    <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
-<?php 
-//searches for specific diseases using index.html and POST to get the variable submitted
+<aside id="about" class="search">
+ <script>
+function validateForm()
+{
+var x=document.forms["login"]["searchQuery"].value;
+if (x==null || x=="")
+  {
+  alert("Input keyword");
+  return false;
+  }
+}</script>
+  <h4>Search disease name e.g Alzheimer</h4>
+<form name="login" action="diseases.php"  onsubmit="return validateForm()" method="post" >
+<input type="text" name="searchQuery" placeholder="e.g Alzheimer"> 
+
+<input type="submit" value="Search">
+</form>
+<?php
+//Gets variable from GET method
 	if (isset($_GET['searchQuery'])){ 
 	$_GET["searchQuery"];
 	    $searchQuery = $_GET['searchQuery'];
 }
 
-/*echo $searchQuery;
-str_replace('"', "", $searchQuery);
-echo $searchQuery;*/
-
-//this file loads specific things from biocrunch../sparql -- look at query below
-
-//include rap
+//include RAP API RDF library
 define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
 include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
 
-//sparql client
+//concatanate two strings. So it can be used directly within sparql query
+$searchQuery2="phe:";
+$searchQuery=$searchQuery2.$searchQuery;
+
+//assign endpoint to sparql client
 $client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
-//Find the name of all diseases
+//Find the name of all phenotypes related to disease
 $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
-select *
+select ?pheno ?name
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
 where { 
 	$searchQuery phe:has_phenotype ?pheno .
 	?pheno phe:has_name  ?name
-   
 }
-	
+	GROUP BY ?pheno
+	ORDER BY ASC(?pheno)
 ";
-//GROUP BY ?pheno
-	//ORDER BY ASC(?pheno)
+
+// ******Comments below refer to query above********
+//FROM explains which graph.
+//Group by - this elimiates multiple results which are the same, and only enteres them as one entry.
+// Order by - alphabetical order.
+
 //To execute the query, we create a new ClientQuery 
 //object and pass it to the SPARQL client:
 
@@ -75,7 +100,7 @@ $query->query($querystring);
 $result = $client->query($query);
 
 //The following code loops over the result set and prints out all 
-//results of the variable ?title.
+//results of the variable
 ?>
 <h3>Phenotypes directly associated with <?php echo $searchQuery ?></h3>
 
@@ -89,81 +114,77 @@ $result = $client->query($query);
     </thead>
     <tbody>
   <?php
+  //for every results found.
+
 foreach($result as $line){
   $pheno = $line['?pheno'];
   $name =$line['?name'];  
-  
-  if (preg_match('/"([^"]+)"/', $pheno, $m)) { //finds instances that match regex aka gets url
-    $pheno = $m[0];   	//assign first instance to pheno
-	$c=explode("/", $pheno); //explode pheno to get just end of url
-	$pheno=end($c); 
-	$pheno = str_replace('"', "", $pheno); //remove quotations from string.
+  // each occurence of ?variable is assigned to a php variable.
+
+  if (preg_match('/"([^"]+)"/', $pheno, $m)) {  //preg_match is used to seperate the ID needed from the URL given.
+    $pheno = $m[0];   							//assign first instance to variable
+	$c=explode("/", $pheno); 					//explode variable to get just end of url
+	$pheno=end($c); 							//gets the end of the array of array
+	$pheno = str_replace('"', "", $pheno); 		//remove quotations from string.
 } 
 
 	if (preg_match('/"([^"]+)"/', $name, $n)) {
 	$name = $n[0]; 
 	$name =str_replace('"', "", $name);
 } 
-  
-    if($name != ""){
-    //  echo $name->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
+  //Below, format results into a table, as well as giving url's variables
+
+    if($name != ""){						   	// if the variable is not empty
+
 		echo "<tr>";
-		$pheno = str_replace('_', ":", $pheno);
+		$pheno = str_replace('_', ":", $pheno); //maniplulates tring, so the variable can be used to produce a valid url
 
         echo "<td><a href='https://www.ebi.ac.uk/ontology-lookup/?termId=$pheno'>$pheno</a></td>";
         echo "<td>$name</td>";
         echo "</tr>";
 	  }
     else{
-      echo "undbound<br>";
+      echo "undbound<br>"; 	// if no results found we print unbound.
 	  }
 	   
 }
 echo "</table>";
-?>
-<?php 
-//searches for specific diseases using index.html and POST to get the variable submitted
+
+//****************************************************************************************************************
+//****************************************************************************************************************
+// Same code below, except the query differs and is explained 
+//****************************************************************************************************************
+//****************************************************************************************************************
+
 	if (isset($_GET['searchQuery'])){ 
 	$_GET["searchQuery"];
 	    $searchQuery = $_GET['searchQuery'];
 }
 
-
-
-//this file loads specific things from biocrunch../sparql -- look at query below
-
-//include rap
 define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
 include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
-
-//sparql client
+$searchQuery2="phe:";
+$searchQuery=$searchQuery2.$searchQuery;
 $client = ModelFactory::getSparqlClient("http://biocrunch.dcs.aber.ac.uk:8890/sparql"); 
-//Find the name of all diseases
 $querystring = "
 PREFIX phe: <http://phenomebrowser.org/phenomenet/>
 PREFIX obo: <http://obofoundry.org/obo>
-select *
+select ?infpheno ?name
 FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 
 where { 
 	$searchQuery phe:has_inferred_phenotype ?infpheno .
 	?infpheno phe:has_name  ?name
 }
-	
+	GROUP BY ?infpheno
+	ORDER BY ASC(?infpheno)
 ";
-//    FILTER regex(?dis, '$searchQuery', 'i')
-//GROUP BY ?infpheno
-	//ORDER BY ASC(?infpheno)
-
-//To execute the query, we create a new ClientQuery 
-//object and pass it to the SPARQL client:
+// searches for inferred phenotypes.
 
 $query = new ClientQuery();
 $query->query($querystring);
 $result = $client->query($query);
 
-//The following code loops over the result set and prints out all 
-//results of the variable ?title.
 ?>
 <h3>Mammalian Phenotypes inferred for <?php echo $searchQuery ?></h3>
 
@@ -181,11 +202,11 @@ foreach($result as $line){
   $infpheno = $line['?infpheno'];
   $name =$line['?name'];  
   
-  if (preg_match('/"([^"]+)"/', $infpheno, $m)) { //finds instances that match regex aka gets url
-    $infpheno = $m[0];   	//assign first instance to pheno
-	$c=explode("/", $infpheno); //explode pheno to get just end of url
+  if (preg_match('/"([^"]+)"/', $infpheno, $m)) { 
+    $infpheno = $m[0];   	
+	$c=explode("/", $infpheno); 
 	$infpheno=end($c); 
-	$infpheno = str_replace('"', "", $infpheno); //remove quotations from string.
+	$infpheno = str_replace('"', "", $infpheno);
 } 
 
 	if (preg_match('/"([^"]+)"/', $name, $n)) {
@@ -195,10 +216,8 @@ foreach($result as $line){
   
 
     if($name != ""){
-    //  echo $name->toString()."..... ".$name->toString()."<br>"; // printed on same line now.  can easily turn into tables later on.
 		echo "<tr>";
 		$infpheno = str_replace('_', ":", $infpheno);
-
         echo "<td><a href='https://www.ebi.ac.uk/ontology-lookup/?termId=$infpheno'>$infpheno</a></td>";
         echo "<td>$name</td>";
         echo "</tr>";
@@ -209,7 +228,6 @@ foreach($result as $line){
 	   
 }
 echo "</table>";
-//SPARQLEngine::writeQueryResultAsHtmlTable($result); 
 ?>
 
 <footer id="footer" class="clearfix">
