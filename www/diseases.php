@@ -79,16 +79,17 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where {
 FILTER regex(?name, '$searchQuery', 'i')
 ?dis phe:has_name ?name .
-	
+FILTER(REGEX(STR(?dis), '^http://phenomebrowser.org/phenomenet'))
 }
 
 LIMIT 200";
 // ******Comments below refer to query above********
 //FROM explains which graph.
 //First filter uses the variable to look for only diseases with this word in its name. 'i' means case insensitive
+//second filter - allows for onyl diseases, and not phenotypes
 // Limit - limits to 200 results.
 
-//old code - FILTER(REGEX(STR(?dis), '^http://phenomebrowser.org/phenomenet'))
+
 
 //To execute the query, we create a new ClientQuery 
 //object and pass it to the SPARQL client:

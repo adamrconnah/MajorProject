@@ -765,7 +765,7 @@ foreach($result as $line){
 
 if (preg_match('/"([^"]+)"/', $node, $m)) { 
     $node = $m[0];   	
-	$c=explode("/", $node);l
+	$c=explode("/", $node);
 	$node=end($c); 
 	$node = str_replace('"', "", $node); 
 } 
