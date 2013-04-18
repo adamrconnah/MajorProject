@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Phenomanal</title>
+<title>PhenomeRDF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
@@ -17,7 +17,7 @@
 	<div id="top" class="clearfix">
 		<!-- add in logo -->
 		<div id="logo"><img id="logoimage" src="" alt=""> 
-		  <h1 id="logotitle">Phenomanal</h1>
+		  <h1 id="logotitle">PhenomeRDF</h1>
 		</div>
 		<!--Menu-->
 		<nav>
@@ -32,7 +32,7 @@
 	</div>
  	 <header>
   	<!-- Description-->
-    <h1><span>Phenomeanal</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
+    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
 
 The application can be used to find diseases which are related using their phenotypic similarity value.
   </h1>
@@ -62,7 +62,11 @@ if (x==null || x=="")
     $searchQuery = $_POST['searchQuery'];
 
 }
-
+?>
+<br />
+<br />
+<p> Results for "<span><?php echo $searchQuery ?></span>"</p>
+<?php
 //include RAP API RDF library
 define("RDFAPI_INCLUDE_DIR", "rdfapi-php/api/");
 include(RDFAPI_INCLUDE_DIR . "RdfAPI.php");
@@ -155,7 +159,7 @@ echo "</table>";
     <!-- /section -->
     <section id="copyright" class="clearfix">
       <p class="left">Adam Connah<a href="#"></a> aoc9@aber.ac.uk</p>
-      <p class="right">Website Template By <a target="_blank" href="http://www.birondesign.com/">Chris Biron</a> &amp; Modified By <a href="http://www.os-templates.com/">OS Templates</a></p>
+      <p class="right">Website Template By <a target="_blank" href="http://www.birondesign.com/">Chris Biron</a> &amp; Modified By Adam Connah</p>
     </section>
   </div>
 </footer>
