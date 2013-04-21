@@ -2,7 +2,7 @@
 
 $i=0;
 $j=0;
-
+$count=0;
 if (isset($_GET['pheno'])){ 
 $id = $_GET['pheno'];
 $id = str_replace(':', "", $id); 
@@ -41,15 +41,17 @@ else $id="MP0000001";
 						$var1=$termRow2[1];
 						
 						echo "<li><div class=\"pheno\" id='$termRow2[1]'><a href=\"#!\">".$termRow2[2]."</a><span><a href='phenotypes.php?searchQuery=$termRow2[1]'>   <img src=\"mag.png\" ></a></span></div></li>";
-																											
+						$count++;		//adds 1 to the count if if finds a child element																			
 						}
 						}
 						
 					}
 						
 				}
-					
+				if ($count==0) //if count is zero, it is end of branch
+					echo "<li><div class=\"pheno\">End of branch</div></li>";
+
 								echo "</div>";
 								echo "</ul>";
 	
-								?>
+?>

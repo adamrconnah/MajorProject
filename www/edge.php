@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<title>Phenomanal</title>
+<title>PhenomeRDF</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0">
 <link rel="stylesheet" type="text/css" href="styles/layout.css">
@@ -11,13 +11,19 @@
 <script src="scripts/css3-mediaqueries.min.js"></script>
 <![endif]-->
 </head>
+<?php
+//Gets variable from GET method
+	if (isset($_GET['searchQuery'])){ 
+    $searchQuery = $_GET['searchQuery'];
 
+}
+?>
 <body>
 <div class="wrapper">
 	<div id="top" class="clearfix">
 		<!-- add in logo -->
 		<div id="logo"><img id="logoimage" src="" alt=""> 
-		  <h1 id="logotitle">Phenomanal</h1>
+		  <h1 id="logotitle">PhenomeRDF</h1>
 		</div>
 		<!--Menu-->
 		<nav>
@@ -32,7 +38,7 @@
 	</div>
  	 <header>
   	<!-- Description-->
-    <h1><span>Phenomeanal</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
+    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
 
 The application can be used to find diseases which are related using their phenotypic similarity value.
   </h1>
@@ -59,26 +65,26 @@ if (x==null || x=="")
  
  <!--  /********************************** Body goes here**************************/  -->
 <!-- List of contents for page. Easy to jump to lower parts -->
+<p> The tables below show the diseases which are related to <span><?php echo $searchQuery ?></span></p>
+
+
  <a name="content"></a>
  <ul>
-	<li><a href="#OMIM">For OMIM prefix OMIM_</a></li>
-	<li><a href="#MGI">For mouse prefix MGI</a></li>
-	<li><a href="#ORPHANET">For  ORPHANET prefix  ORPHANET_</a></li>
-	<li><a href="#RGD">For RAT RGD</a></li>
-	<li><a href="#FB">For fly FB</a></li>
-	<li><a href="#WB">For worm WB</a></li>
-	<li><a href="#S0">For yeast S0</a></li>
-	<li><a href="#ZD">For zebrafish ZD</a></li>
-	<li><a href="#ZD">For slime mold DBS</a></li>
+	<li><a href="#OMIM">Related Human diseases, prefix OMIM</a></li>
+	<li><a href="#MGI">Related Mouse diseases, prefix MGI</a></li>
+	<li><a href="#ORPHANET">Related Human diseases, ORPHANET</a></li>
+	<li><a href="#RGD">Related Rat diseases, prefix RGD</a></li>
+	<li><a href="#FB">Related Fly diseases, prefix FB</a></li>
+	<li><a href="#WB">Related Worm diseases, prefix WB</a></li>
+	<li><a href="#S0">Related Yeast diseases, prefix S0</a></li>
+	<li><a href="#ZD">Related Zebrafish diseases, prefix ZD</a></li>
+	<li><a href="#ZD">Related Slime Mold diseases, prefix DBS</a></li>
 	
 </ul>
+
  <a name="OMIM"></a>  
   <?php 
-//Gets variable from GET method
-	if (isset($_GET['searchQuery'])){ 
-    $searchQuery = $_GET['searchQuery'];
 
-}
 //Concatinating two strings, as the "phe:" is needed so it can be used in the query.
 $searchQuery2="phe:";
 $searchQuery=$searchQuery2.$searchQuery;
@@ -127,7 +133,6 @@ $result = $client->query($query);
 //results of the variable 
 ?>
 <!-- Table headings -->
-
 <h3> OMIM </h3>
   <table id="hor-minimalist-a" summary="Diseases">
  <thead>
@@ -190,9 +195,8 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
 
- <a name="MGI"></a>  
+ <a name="MGI"></a>
 
 <?php
 //*****************************************************************************************************************************************
@@ -236,8 +240,7 @@ $query->query($querystring);
 $result = $client->query($query);
 
 ?>
-<a href="#content">TOP</a>
-<h3> MGI </h3>
+<p><a href="#content">TOP</a></p><h3> MGI </h3>
 
   <table id="hor-minimalist-a" summary="Diseases">
  <thead>
@@ -293,8 +296,7 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
  <a name="ORPHANET"></a>  
 
 <?php
@@ -378,8 +380,7 @@ if (preg_match('/"([^"]+)"/', $node, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
  <a name="RGD"></a>  
 
 <?php
@@ -461,8 +462,7 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
  <a name="FB"></a>  
 
  <?php
@@ -547,8 +547,7 @@ if (preg_match('/"([^"]+)"/', $node, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
  <a name="WB"></a>  
 
 <?php
@@ -628,8 +627,7 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
  <a name="S0"></a>  
 
 <?php
@@ -709,8 +707,7 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
 <a name="ZD"></a> 
 <?php
 //ZD Zebrafish
@@ -791,8 +788,7 @@ if (preg_match('/"([^"]+)"/', $name, $n)) {
 }
 echo "</table>";
 ?>
-<a href="#content">TOP</a>
-
+<p><a href="#content">TOP</a></p>
  <footer id="footer" class="clearfix">
   <div class="wrapper">
     
@@ -805,7 +801,7 @@ echo "</table>";
     <!-- /section -->
     <section id="copyright" class="clearfix">
       <p class="left">Adam Connah<a href="#"></a> aoc9@aber.ac.uk</p>
-      <p class="right">Website Template By <a target="_blank" href="http://www.birondesign.com/">Chris Biron</a> &amp; Modified By <a href="http://www.os-templates.com/">OS Templates</a></p>
+      <p class="right">Website Template By <a target="_blank" href="http://www.birondesign.com/">Chris Biron</a> &amp; Modified By Adam Connah</p>
     </section>
   </div>
 </footer>
