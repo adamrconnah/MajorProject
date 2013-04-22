@@ -160,7 +160,7 @@ margin: 0;
  padding: 0 12px;
  line-height: 20px;
  background: url(node.png) no-repeat;
- color: #D687A7;
+ color: #2B4BD9;
  font-weight: bold;
  }
    ul.tree li a, a:active  {
@@ -623,7 +623,7 @@ text-indent:0
 	font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
 	font-size: 12px;
 	background: #fff;
-	margin: 45px;
+	margin: 20px;
 	width: 80%;
 	border-collapse: collapse;
 	text-align: left;
@@ -648,4 +648,52 @@ text-indent:0
 
 }
 
+table { 
+  width: 100%; 
+  border-collapse: collapse; 
+}
+
+th { 
+  
+}
+td, th { 
+ 
+}
+
+@media 
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+
+	/* Force table to not be like tables anymore */
+	table, thead, tbody, th, td, tr { 
+		display: block; 
+	}
+	
+	/* Hide table headers (but not display: none;, for accessibility) */
+	thead tr { 
+		position: absolute;
+		top: -9999px;
+		left: -9999px;
+	}
+	
+	tr { border: 1px solid #ccc; }
+	
+	td { 
+		/* Behave  like a "row" */
+		border: none;
+		border-bottom: 1px solid #eee; 
+		position: relative;
+		padding-left: 50%; 
+	}
+	
+	td:before { 
+		/* Now like a table header */
+		position: absolute;
+		/* Top/left values mimic padding */
+		top: 6px;
+		left: 6px;
+		width: 45%; 
+		padding-right: 10px; 
+		white-space: nowrap;
+	}
 
