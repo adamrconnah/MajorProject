@@ -16,7 +16,7 @@
 <div class="wrapper">
 	<div id="top" class="clearfix">
 		<!-- add in logo -->
-		<div id="logo">		<img id="logoimage" src="tree.png" alt="Image of a wasp"> 
+		<div id="logo"><img id="logoimage" src="tree.png" alt="Image of a wasp"> 
 		  <h1 id="logotitle">PhenomeRDF</h1>
 		</div>
 		<!--Menu-->
@@ -30,38 +30,34 @@
 		  </ul>
 		</nav>
 	</div>
- 	 <header>
+<header>
   	<!-- Description-->
-    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
+    <h1><span>PhenomeRDF</span> is across species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
 
 The application can be used to find diseases which are related using their phenotypic similarity value.
   </h1>
-    <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
-  </header>
-<aside id="about" class="search">
- <script>
-function validateForm()
-{
-var x=document.forms["login"]["searchQuery"].value;
-if (x==null || x=="")
-  {
-  alert("Input keyword");
-  return false;
-  }
-}</script>
 
-<p>Search disease or gene name <span>e.g Alzheimer</span></p>
-<!-- Form -->
+    <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
+ </header>
+ <!--  /********************************** Body goes here**************************/  -->
+ <aside id="about" class="search">
+
+ <p>Using this website users can query the RDF store for diseases and genes</p>
+ <p>An example query would be to search for all diseases which contain the keyword <span>Cancer</span></p>
+<p> Type <span>Cancer</span> into the form below and click search.<p><br />
+
 <form name="login" action="diseases.php"  onsubmit="return validateForm()" method="post" >
-<input type="text" name="searchQuery" placeholder="e.g Alzheimer"> 
+<input type="text" name="searchQuery" placeholder="e.g Cancer"> 
 
 <input type="submit" value="Search">
 </form>
-<br/>
-<p>PhenomeRDF also provides a <a href="tree.html">Tree Structure</a>, which allows users to search for diseases related to the chosen phenotype.</p>
+<br />
+
 </aside>
-<footer id="footer" class="clearfix">
-<div class="wrapper">    
+
+ <!-- Footer -->
+ <footer id="footer" class="clearfix">
+  <div class="wrapper">
     <section class="right social clear">
       <!-- Replace with any 32px x 32px icons -->
       <a href="https://plus.google.com/u/0/111044644508972712357/posts"><img class="icon" src="images/icons/google.png" alt=""></a> <a href="https://www.youtube.com/user/dudders666"><img class="icon" src="images/icons/youtube.png" alt=""></a> <a href="http://www.facebook.com/adamrconnah"><img class="icon" src="images/icons/facebook.png" alt=""></a> <a href="http://www.twitter.com/adamrconnah"><img class="icon" src="images/icons/twitter.png" alt=""></a>

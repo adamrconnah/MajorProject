@@ -22,26 +22,23 @@
 <div class="wrapper">
 	<div id="top" class="clearfix">
 		<!-- add in logo -->
-		<div id="logo"><img id="logoimage" src="" alt=""> 
+		<div id="logo"><img id="logoimage" src="tree.png" alt=""> 
 		  <h1 id="logotitle">PhenomeRDF</h1>
 		</div>
 		<!--Menu-->
 		<nav>
 		   <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="data.html">Data</a></li>
+			<li><a href="index.html">Home</a></li>			
 			<li><a href="tree.html">Tree</a></li>
-			<li><a href="work.html">Help</a></li>
+			<li><a href="help.html">Help</a></li>
+			<li><a href="data.html">Data</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		  </ul>
 		</nav>
 	</div>
  	 <header>
   	<!-- Description-->
-    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
-
-The application can be used to find diseases which are related using their phenotypic similarity value.
-  </h1>
+   
     <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
 <aside id="about" class="search">
@@ -56,17 +53,20 @@ if (x==null || x=="")
   }
 }</script>
   
- <h4>Search disease name e.g Alzheimer</h4>
+ <p>Search disease or gene name <span>e.g Alzheimer</span></p>
+
+
 <form name="login" action="diseases.php"  onsubmit="return validateForm()" method="post" >
 <input type="text" name="searchQuery" placeholder="e.g Alzheimer"> 
 
 <input type="submit" value="Search">
 </form>
+<br />
  
  <!--  /********************************** Body goes here**************************/  -->
 <!-- List of contents for page. Easy to jump to lower parts -->
 <p> The tables below show the diseases which are related to <span><?php echo $searchQuery ?></span></p>
-
+<br />
 
  <a name="content"></a>
  <ul>
@@ -226,9 +226,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'MGI', 'i')
 }
 ORDER BY DESC(?value)
@@ -315,9 +315,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery) .
 		FILTER regex(?node, 'ORPHANET', 'i')
 }
 ORDER BY DESC(?value)
@@ -399,9 +399,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'RGD', 'i')
 }
 ORDER BY DESC(?value)
@@ -483,9 +483,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery) .
 		FILTER regex(?node, 'FB', 'i')
 }
 ORDER BY DESC(?value)
@@ -566,9 +566,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'WB', 'i')
 }
 ORDER BY DESC(?value)
@@ -648,9 +648,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery) .
 		FILTER regex(?node, 'S0', 'i')
 }
 ORDER BY DESC(?value)
@@ -728,9 +728,9 @@ FROM <http://biocrunch.dcs.aber.ac.uk:8890/DAV/complete>
 where { $searchQuery phe:has_edge ?edge .
         ?edge phe:has_value ?value ;
               phe:has_node ?node .
-		?node phe:has_name ?name
+		?node phe:has_name ?name .
 			  
-		FILTER (?node != $searchQuery) 
+		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'ZD', 'i')
 }
 ORDER BY DESC(?value)

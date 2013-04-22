@@ -16,16 +16,16 @@
 <div class="wrapper">
 	<div id="top" class="clearfix">
 		<!-- add in logo -->
-		<div id="logo"><img id="logoimage" src="" alt=""> 
+		<div id="logo"><img id="logoimage" src="tree.png" alt="Image of a wasp"> 
 		  <h1 id="logotitle">PhenomeRDF</h1>
 		</div>
 		<!--Menu-->
 		<nav>
 		   <ul>
-			<li><a href="index.html">Home</a></li>
-			<li><a href="data.html">Data</a></li>
+			<li><a href="index.html">Home</a></li>			
 			<li><a href="tree.html">Tree</a></li>
-			<li><a href="work.html">Help</a></li>
+			<li><a href="help.html">Help</a></li>
+			<li><a href="data.html">Data</a></li>
 			<li><a href="contact.html">Contact</a></li>
 		  </ul>
 		</nav>
@@ -49,7 +49,9 @@ if (x==null || x=="")
   return false;
   }
 }</script>
-  <h4>Search disease name e.g Alzheimer</h4>
+  <p>Search disease or gene name <span>e.g Alzheimer</span></p>
+
+
 <form name="login" action="diseases.php"  onsubmit="return validateForm()" method="post" >
 <input type="text" name="searchQuery" placeholder="e.g Alzheimer"> 
 
