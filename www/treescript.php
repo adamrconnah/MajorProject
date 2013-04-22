@@ -9,7 +9,7 @@ $id = str_replace(':', "", $id);
 	}
 if (isset($_POST['pheno'])){ 
 $id = $_POST['pheno'];
-$id = str_replace(':', "", $id); 	
+$POST = str_replace(':', "", $id); 	
 
 }
 else $id="MP0000001";
@@ -23,7 +23,7 @@ else $id="MP0000001";
 
 			foreach ($terms2 as $term2){
 			$termRow2 = explode("\n", $term2);					
-																					//$termRow is $term split into lines
+															//$termRow is $term split into lines
 				foreach ($termRow2 as $value3){										//for every termRow 
 					if (preg_match('/^is_a:(.*)/', $value3, $m)) { 					//find the row with "is_a:" at start
 						$n = explode("!", $m[0]); 									//explode matching row using the "!" seperator

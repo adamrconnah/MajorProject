@@ -38,7 +38,8 @@
 	</div>
  	 <header>
   	<!-- Description-->
-   
+       <h1><span>Related Diseases</span>  </h1>
+
     <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
 <aside id="about" class="search">
@@ -115,7 +116,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'OMIM', 'i')
 }
-ORDER BY DESC(?value)
+ORDER BY DESC(?value) Limit 200
 ";
 // ******Comments below refer to query above********
 //FROM explains which graph.
@@ -231,8 +232,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'MGI', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 
 
 $query = new ClientQuery();
@@ -320,8 +320,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery) .
 		FILTER regex(?node, 'ORPHANET', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 
 $query = new ClientQuery();
 $query->query($querystring);
@@ -404,8 +403,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'RGD', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 
 
 $query = new ClientQuery();
@@ -488,8 +486,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery) .
 		FILTER regex(?node, 'FB', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 
 $query = new ClientQuery();
 $query->query($querystring);
@@ -571,8 +568,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'WB', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 
 $query = new ClientQuery();
 $query->query($querystring);
@@ -653,8 +649,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery) .
 		FILTER regex(?node, 'S0', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 $query = new ClientQuery();
 $query->query($querystring);
 $result = $client->query($query);
@@ -733,8 +728,7 @@ where { $searchQuery phe:has_edge ?edge .
 		FILTER (?node != $searchQuery)  .
 		FILTER regex(?node, 'ZD', 'i')
 }
-ORDER BY DESC(?value)
-";
+ORDER BY DESC(?value) Limit 200";
 
 $query = new ClientQuery();
 $query->query($querystring);

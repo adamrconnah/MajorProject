@@ -32,10 +32,7 @@
 	</div>
  	 <header>
   	<!-- Description-->
-    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
-
-The application can be used to find diseases which are related using their phenotypic similarity value.
-  </h1>
+    <h1><span>Search Results</span>  </h1>
     <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
 <aside id="about" class="search">
@@ -114,8 +111,8 @@ $result = $client->query($query);
  <thead>
     	<tr>
         	<th scope="col">Disease  name (ID)</th>
-            <th scope="col">Explore</th>
             <th scope="col">Phenotype Link</th>
+            <th scope="col">Explore</th>
 		</tr>
     </thead>
     <tbody>
@@ -143,9 +140,9 @@ foreach($result as $line){
 //Below, format results into a table, as well as giving url's variables
 	echo "<tr>";
         echo "<td>$name (<a href='http://omim.org/entry/$dis2'>$dis</a>)</td>";
-		echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>"; 
 		echo "<td><a href='ontologyterms.php?searchQuery=$dis'>Phenotypes</a></td>"; 
-        echo "</tr>";
+     	echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>"; 
+		echo "</tr>";
 	  }
     else{
       echo "undbound<br>"; // if no results found we print unbound.

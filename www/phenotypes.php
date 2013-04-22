@@ -32,10 +32,7 @@
 	</div>
  	 <header>
   	<!-- Description-->
-    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
-
-The application can be used to find diseases which are related using their phenotypic similarity value.
-  </h1>
+    <h1><span>Related Diseases</span></h1>
     <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
 <aside id="about" class="search">
@@ -114,9 +111,10 @@ $result = $client->query($query);
 <thead>
     	<tr>
         	<th scope="col">Disease  name (ID)</th>
-            <th scope="col">Explore</th>
 			<th scope="col">Phenotype Link</th>        
-        </tr>
+            <th scope="col">Explore</th>
+
+		</tr>
 </thead>
     <tbody>
   <?php
@@ -146,8 +144,8 @@ if (preg_match('/"([^"]+)"/', $dis, $m)) {
 //Below, format results into a table, as well as giving url's variables      
 	echo "<tr>";
         echo "<td>$name</td>";
-		echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>";     
         echo "<td><a href='ontologyterms.php?searchQuery=$dis'>Phenotypes</a></td>"; 
+		echo "<td><a href='edge.php?searchQuery=$dis'>Explore</a></td>";     
         echo "</tr>";
 	  }
     else{

@@ -32,9 +32,7 @@
 	</div>
  	 <header>
   	<!-- Description-->
-    <h1><span>PhenomeRDF</span> is a cross species phenotype network which allows the fast analysis of the similarity between different phenotypes in organisms, (yeast, fish, worm, fly, rat, slime mold and mouse model) as well as human diseases (OMIM and OrphaNet)
-
-The application can be used to find diseases which are related using their phenotypic similarity value.
+    <h1><span>Related Phenotypes</span> 
   </h1>
     <!--<h2>Fluffy fur et bat tortor in viverra</h2> -->
   </header>
@@ -57,6 +55,7 @@ if (x==null || x=="")
 
 <input type="submit" value="Search">
 </form>
+<br />
 <?php
 //Gets variable from GET method
 	if (isset($_GET['searchQuery'])){ 
