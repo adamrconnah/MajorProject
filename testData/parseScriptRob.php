@@ -71,7 +71,6 @@ while (!feof($genotype) ) { //feof = while not end of file
 			}
 			fclose($inferred);	
 			fclose($inferredtypeout);	
-
 				
 	$ontology = fopen("OntologyTerms.sql", "r"); 			//opens file InferredPhenotype.sql
 	$ontologytypeout = fopen("OntologyTerms.rdf", "w"); 			//opens file Phenotype.sql
@@ -95,10 +94,6 @@ while (!feof($genotype) ) { //feof = while not end of file
 		
 				}
 			fclose($ontology);	
-			fclose($ontologytypeout);
-
-
-
-				
+			fclose($ontologytypeout);				
 			echo "</rdf:RDF>";
 
